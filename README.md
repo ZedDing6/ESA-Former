@@ -1,0 +1,3 @@
+The code for the lightweight citrus disease classification model is derived from the research work of (https://github.com/AIGC-yuxincai/Citrus_Disease_Detection) .
+Our data will be made freely available for any use related to the dataset (If necessary, please contact this email address:18046825985@163.com).
+The source of the public Apple dataset can be found at: https://zenodo.org/records/1313615. We would like to express our gratitude to O. Kleynen, V. Leemans, M.-F. Destain and others for their support in our research. The use of this dataset is carried out with the permission of the data owner.
