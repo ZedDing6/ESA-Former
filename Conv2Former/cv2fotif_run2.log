@@ -1,0 +1,608 @@
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::gelu encountered 141 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::mean encountered 193 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::sub encountered 192 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::pow encountered 96 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::add encountered 330 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::sqrt encountered 96 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::div encountered 96 time(s)
+[2026-02-25 21:20:16,365][jit_analysis.py][line:499][WARNING] Unsupported operator aten::mul encountered 234 time(s)
+[2026-02-25 21:25:38,745][main.py][line:179][INFO] [Run 2 | Epoch 0] Val Acc 0.5408, Val Precision 0.3657, Val Recall 0.3822, Val F1 0.3250
+[2026-02-25 21:25:38,745][main.py][line:183][INFO] [Run 2 | Epoch 0] Train Acc 0.5345, Train Precision 0.3346, Train Recall 0.3546,Train F1 0.3091
+[2026-02-25 21:31:12,588][main.py][line:179][INFO] [Run 2 | Epoch 1] Val Acc 0.4485, Val Precision 0.4195, Val Recall 0.3660, Val F1 0.3310
+[2026-02-25 21:31:12,589][main.py][line:183][INFO] [Run 2 | Epoch 1] Train Acc 0.4789, Train Precision 0.5007, Train Recall 0.3564,Train F1 0.3241
+[2026-02-25 21:36:34,587][main.py][line:179][INFO] [Run 2 | Epoch 2] Val Acc 0.5193, Val Precision 0.5659, Val Recall 0.3852, Val F1 0.3479
+[2026-02-25 21:36:34,587][main.py][line:183][INFO] [Run 2 | Epoch 2] Train Acc 0.5431, Train Precision 0.5780, Train Recall 0.3353,Train F1 0.3236
+[2026-02-25 21:41:54,126][main.py][line:179][INFO] [Run 2 | Epoch 3] Val Acc 0.4721, Val Precision 0.3192, Val Recall 0.3468, Val F1 0.3122
+[2026-02-25 21:41:54,127][main.py][line:183][INFO] [Run 2 | Epoch 3] Train Acc 0.5345, Train Precision 0.3231, Train Recall 0.3488,Train F1 0.3318
+[2026-02-25 21:47:07,079][main.py][line:179][INFO] [Run 2 | Epoch 4] Val Acc 0.5343, Val Precision 0.2654, Val Recall 0.3873, Val F1 0.3004
+[2026-02-25 21:47:07,079][main.py][line:183][INFO] [Run 2 | Epoch 4] Train Acc 0.5554, Train Precision 0.4992, Train Recall 0.3553,Train F1 0.2940
+[2026-02-25 21:52:29,916][main.py][line:179][INFO] [Run 2 | Epoch 5] Val Acc 0.5279, Val Precision 0.4835, Val Recall 0.4534, Val F1 0.4338
+[2026-02-25 21:52:29,917][main.py][line:183][INFO] [Run 2 | Epoch 5] Train Acc 0.5677, Train Precision 0.4791, Train Recall 0.4285,Train F1 0.4198
+[2026-02-25 21:57:48,591][main.py][line:179][INFO] [Run 2 | Epoch 6] Val Acc 0.5515, Val Precision 0.4028, Val Recall 0.3988, Val F1 0.3973
+[2026-02-25 21:57:48,592][main.py][line:183][INFO] [Run 2 | Epoch 6] Train Acc 0.5500, Train Precision 0.4080, Train Recall 0.3357,Train F1 0.3214
+[2026-02-25 22:03:08,001][main.py][line:179][INFO] [Run 2 | Epoch 7] Val Acc 0.5708, Val Precision 0.4712, Val Recall 0.4356, Val F1 0.4102
+[2026-02-25 22:03:08,002][main.py][line:183][INFO] [Run 2 | Epoch 7] Train Acc 0.5746, Train Precision 0.4619, Train Recall 0.3781,Train F1 0.3664
+[2026-02-25 22:08:14,947][main.py][line:179][INFO] [Run 2 | Epoch 8] Val Acc 0.5644, Val Precision 0.4406, Val Recall 0.4182, Val F1 0.4207
+[2026-02-25 22:08:14,948][main.py][line:183][INFO] [Run 2 | Epoch 8] Train Acc 0.5602, Train Precision 0.4320, Train Recall 0.3741,Train F1 0.3742
+[2026-02-25 22:13:39,369][main.py][line:179][INFO] [Run 2 | Epoch 9] Val Acc 0.5644, Val Precision 0.4688, Val Recall 0.4398, Val F1 0.4434
+[2026-02-25 22:13:39,369][main.py][line:183][INFO] [Run 2 | Epoch 9] Train Acc 0.5650, Train Precision 0.4872, Train Recall 0.3886,Train F1 0.3926
+[2026-02-25 22:18:50,040][main.py][line:179][INFO] [Run 2 | Epoch 10] Val Acc 0.5258, Val Precision 0.4446, Val Recall 0.4469, Val F1 0.4365
+[2026-02-25 22:18:50,040][main.py][line:183][INFO] [Run 2 | Epoch 10] Train Acc 0.5597, Train Precision 0.4331, Train Recall 0.4274,Train F1 0.4297
+[2026-02-25 22:24:13,127][main.py][line:179][INFO] [Run 2 | Epoch 11] Val Acc 0.4549, Val Precision 0.4332, Val Recall 0.3908, Val F1 0.3509
+[2026-02-25 22:24:13,127][main.py][line:183][INFO] [Run 2 | Epoch 11] Train Acc 0.5468, Train Precision 0.5052, Train Recall 0.4190,Train F1 0.4181
+[2026-02-25 22:29:29,306][main.py][line:179][INFO] [Run 2 | Epoch 12] Val Acc 0.4571, Val Precision 0.4130, Val Recall 0.3947, Val F1 0.3443
+[2026-02-25 22:29:29,306][main.py][line:183][INFO] [Run 2 | Epoch 12] Train Acc 0.5709, Train Precision 0.4880, Train Recall 0.4191,Train F1 0.4168
+[2026-02-25 22:34:44,809][main.py][line:179][INFO] [Run 2 | Epoch 13] Val Acc 0.4785, Val Precision 0.4025, Val Recall 0.4246, Val F1 0.3680
+[2026-02-25 22:34:44,809][main.py][line:183][INFO] [Run 2 | Epoch 13] Train Acc 0.5302, Train Precision 0.4064, Train Recall 0.4027,Train F1 0.3966
+[2026-02-25 22:40:02,302][main.py][line:179][INFO] [Run 2 | Epoch 14] Val Acc 0.5172, Val Precision 0.4106, Val Recall 0.4201, Val F1 0.4085
+[2026-02-25 22:40:02,302][main.py][line:183][INFO] [Run 2 | Epoch 14] Train Acc 0.5618, Train Precision 0.4711, Train Recall 0.4128,Train F1 0.3921
+[2026-02-25 22:45:25,361][main.py][line:179][INFO] [Run 2 | Epoch 15] Val Acc 0.4807, Val Precision 0.4060, Val Recall 0.4115, Val F1 0.3479
+[2026-02-25 22:45:25,362][main.py][line:183][INFO] [Run 2 | Epoch 15] Train Acc 0.5730, Train Precision 0.5344, Train Recall 0.4093,Train F1 0.4145
+[2026-02-25 22:50:36,800][main.py][line:179][INFO] [Run 2 | Epoch 16] Val Acc 0.5064, Val Precision 0.4078, Val Recall 0.4085, Val F1 0.3450
+[2026-02-25 22:50:36,800][main.py][line:183][INFO] [Run 2 | Epoch 16] Train Acc 0.5869, Train Precision 0.4706, Train Recall 0.4321,Train F1 0.4383
+[2026-02-25 22:55:56,201][main.py][line:179][INFO] [Run 2 | Epoch 17] Val Acc 0.5322, Val Precision 0.4330, Val Recall 0.4335, Val F1 0.4262
+[2026-02-25 22:55:56,201][main.py][line:183][INFO] [Run 2 | Epoch 17] Train Acc 0.6057, Train Precision 0.4926, Train Recall 0.4336,Train F1 0.4341
+[2026-02-25 23:01:14,226][main.py][line:179][INFO] [Run 2 | Epoch 18] Val Acc 0.5751, Val Precision 0.4276, Val Recall 0.4434, Val F1 0.3872
+[2026-02-25 23:01:14,227][main.py][line:183][INFO] [Run 2 | Epoch 18] Train Acc 0.5891, Train Precision 0.4930, Train Recall 0.4357,Train F1 0.4463
+[2026-02-25 23:06:47,236][main.py][line:179][INFO] [Run 2 | Epoch 19] Val Acc 0.6052, Val Precision 0.5049, Val Recall 0.4693, Val F1 0.4719
+[2026-02-25 23:06:47,236][main.py][line:183][INFO] [Run 2 | Epoch 19] Train Acc 0.5886, Train Precision 0.5084, Train Recall 0.3988,Train F1 0.4061
+[2026-02-25 23:12:37,335][main.py][line:179][INFO] [Run 2 | Epoch 20] Val Acc 0.5880, Val Precision 0.4923, Val Recall 0.4652, Val F1 0.4530
+[2026-02-25 23:12:37,335][main.py][line:183][INFO] [Run 2 | Epoch 20] Train Acc 0.6105, Train Precision 0.5323, Train Recall 0.4508,Train F1 0.4606
+[2026-02-25 23:18:13,763][main.py][line:179][INFO] [Run 2 | Epoch 21] Val Acc 0.5451, Val Precision 0.4313, Val Recall 0.4063, Val F1 0.3921
+[2026-02-25 23:18:13,763][main.py][line:183][INFO] [Run 2 | Epoch 21] Train Acc 0.5891, Train Precision 0.4675, Train Recall 0.4165,Train F1 0.4205
+[2026-02-25 23:23:44,987][main.py][line:179][INFO] [Run 2 | Epoch 22] Val Acc 0.5215, Val Precision 0.4322, Val Recall 0.4120, Val F1 0.3972
+[2026-02-25 23:23:44,987][main.py][line:183][INFO] [Run 2 | Epoch 22] Train Acc 0.6121, Train Precision 0.5422, Train Recall 0.4607,Train F1 0.4689
+[2026-02-25 23:29:20,026][main.py][line:179][INFO] [Run 2 | Epoch 23] Val Acc 0.5000, Val Precision 0.4552, Val Recall 0.4186, Val F1 0.3915
+[2026-02-25 23:29:20,027][main.py][line:183][INFO] [Run 2 | Epoch 23] Train Acc 0.5859, Train Precision 0.4755, Train Recall 0.4313,Train F1 0.4352
+[2026-02-25 23:34:59,076][main.py][line:179][INFO] [Run 2 | Epoch 24] Val Acc 0.5794, Val Precision 0.5095, Val Recall 0.4365, Val F1 0.4164
+[2026-02-25 23:34:59,076][main.py][line:183][INFO] [Run 2 | Epoch 24] Train Acc 0.6057, Train Precision 0.5361, Train Recall 0.4173,Train F1 0.4235
+[2026-02-25 23:40:48,108][main.py][line:179][INFO] [Run 2 | Epoch 25] Val Acc 0.5901, Val Precision 0.5016, Val Recall 0.4508, Val F1 0.4541
+[2026-02-25 23:40:48,108][main.py][line:183][INFO] [Run 2 | Epoch 25] Train Acc 0.6126, Train Precision 0.5143, Train Recall 0.4290,Train F1 0.4303
+[2026-02-25 23:46:25,167][main.py][line:179][INFO] [Run 2 | Epoch 26] Val Acc 0.5000, Val Precision 0.4169, Val Recall 0.4306, Val F1 0.4041
+[2026-02-25 23:46:25,168][main.py][line:183][INFO] [Run 2 | Epoch 26] Train Acc 0.5993, Train Precision 0.4902, Train Recall 0.4689,Train F1 0.4543
+[2026-02-25 23:52:00,571][main.py][line:179][INFO] [Run 2 | Epoch 27] Val Acc 0.5064, Val Precision 0.4633, Val Recall 0.4374, Val F1 0.3744
+[2026-02-25 23:52:00,572][main.py][line:183][INFO] [Run 2 | Epoch 27] Train Acc 0.6378, Train Precision 0.5523, Train Recall 0.4913,Train F1 0.5006
+[2026-02-25 23:57:42,830][main.py][line:179][INFO] [Run 2 | Epoch 28] Val Acc 0.5923, Val Precision 0.5011, Val Recall 0.4556, Val F1 0.4054
+[2026-02-25 23:57:42,830][main.py][line:183][INFO] [Run 2 | Epoch 28] Train Acc 0.6330, Train Precision 0.5342, Train Recall 0.4628,Train F1 0.4530
+[2026-02-26 00:03:27,007][main.py][line:179][INFO] [Run 2 | Epoch 29] Val Acc 0.6073, Val Precision 0.4951, Val Recall 0.4850, Val F1 0.4888
+[2026-02-26 00:03:27,007][main.py][line:183][INFO] [Run 2 | Epoch 29] Train Acc 0.6260, Train Precision 0.5413, Train Recall 0.4461,Train F1 0.4631
+[2026-02-26 00:09:04,633][main.py][line:179][INFO] [Run 2 | Epoch 30] Val Acc 0.6073, Val Precision 0.5056, Val Recall 0.4934, Val F1 0.4641
+[2026-02-26 00:09:04,633][main.py][line:183][INFO] [Run 2 | Epoch 30] Train Acc 0.6619, Train Precision 0.5500, Train Recall 0.5501,Train F1 0.5466
+[2026-02-26 00:14:23,146][main.py][line:179][INFO] [Run 2 | Epoch 31] Val Acc 0.5923, Val Precision 0.4835, Val Recall 0.4646, Val F1 0.4637
+[2026-02-26 00:14:23,147][main.py][line:183][INFO] [Run 2 | Epoch 31] Train Acc 0.6437, Train Precision 0.5495, Train Recall 0.4913,Train F1 0.5004
+[2026-02-26 00:20:15,879][main.py][line:179][INFO] [Run 2 | Epoch 32] Val Acc 0.5837, Val Precision 0.5428, Val Recall 0.5192, Val F1 0.4899
+[2026-02-26 00:20:15,879][main.py][line:183][INFO] [Run 2 | Epoch 32] Train Acc 0.6485, Train Precision 0.5312, Train Recall 0.5112,Train F1 0.5151
+[2026-02-26 00:26:02,706][main.py][line:179][INFO] [Run 2 | Epoch 33] Val Acc 0.6352, Val Precision 0.5714, Val Recall 0.5035, Val F1 0.5055
+[2026-02-26 00:26:02,706][main.py][line:183][INFO] [Run 2 | Epoch 33] Train Acc 0.6656, Train Precision 0.6044, Train Recall 0.4958,Train F1 0.5095
+[2026-02-26 00:31:43,247][main.py][line:179][INFO] [Run 2 | Epoch 34] Val Acc 0.6502, Val Precision 0.5727, Val Recall 0.5048, Val F1 0.5109
+[2026-02-26 00:31:43,248][main.py][line:183][INFO] [Run 2 | Epoch 34] Train Acc 0.6651, Train Precision 0.5703, Train Recall 0.4998,Train F1 0.5127
+[2026-02-26 00:37:28,804][main.py][line:179][INFO] [Run 2 | Epoch 35] Val Acc 0.6159, Val Precision 0.4992, Val Recall 0.4868, Val F1 0.4522
+[2026-02-26 00:37:28,804][main.py][line:183][INFO] [Run 2 | Epoch 35] Train Acc 0.6592, Train Precision 0.5763, Train Recall 0.4945,Train F1 0.4976
+[2026-02-26 00:42:51,407][main.py][line:179][INFO] [Run 2 | Epoch 36] Val Acc 0.6352, Val Precision 0.5182, Val Recall 0.4831, Val F1 0.4861
+[2026-02-26 00:42:51,407][main.py][line:183][INFO] [Run 2 | Epoch 36] Train Acc 0.6319, Train Precision 0.5096, Train Recall 0.4737,Train F1 0.4786
+[2026-02-26 00:48:01,218][main.py][line:179][INFO] [Run 2 | Epoch 37] Val Acc 0.6567, Val Precision 0.5883, Val Recall 0.5108, Val F1 0.5040
+[2026-02-26 00:48:01,218][main.py][line:183][INFO] [Run 2 | Epoch 37] Train Acc 0.6586, Train Precision 0.5776, Train Recall 0.4929,Train F1 0.4875
+[2026-02-26 00:53:04,818][main.py][line:179][INFO] [Run 2 | Epoch 38] Val Acc 0.6674, Val Precision 0.6075, Val Recall 0.5287, Val F1 0.5173
+[2026-02-26 00:53:04,819][main.py][line:183][INFO] [Run 2 | Epoch 38] Train Acc 0.6731, Train Precision 0.5946, Train Recall 0.5041,Train F1 0.5193
+[2026-02-26 00:58:30,024][main.py][line:179][INFO] [Run 2 | Epoch 39] Val Acc 0.6416, Val Precision 0.5798, Val Recall 0.5167, Val F1 0.5113
+[2026-02-26 00:58:30,025][main.py][line:183][INFO] [Run 2 | Epoch 39] Train Acc 0.6816, Train Precision 0.6065, Train Recall 0.5268,Train F1 0.5343
+[2026-02-26 01:03:36,409][main.py][line:179][INFO] [Run 2 | Epoch 40] Val Acc 0.6695, Val Precision 0.6227, Val Recall 0.4903, Val F1 0.4824
+[2026-02-26 01:03:36,409][main.py][line:183][INFO] [Run 2 | Epoch 40] Train Acc 0.6490, Train Precision 0.5886, Train Recall 0.4583,Train F1 0.4771
+[2026-02-26 01:08:49,007][main.py][line:179][INFO] [Run 2 | Epoch 41] Val Acc 0.5815, Val Precision 0.5886, Val Recall 0.4770, Val F1 0.4500
+[2026-02-26 01:08:49,008][main.py][line:183][INFO] [Run 2 | Epoch 41] Train Acc 0.6875, Train Precision 0.6228, Train Recall 0.5521,Train F1 0.5614
+[2026-02-26 01:14:06,691][main.py][line:179][INFO] [Run 2 | Epoch 42] Val Acc 0.6588, Val Precision 0.5791, Val Recall 0.4940, Val F1 0.4977
+[2026-02-26 01:14:06,692][main.py][line:183][INFO] [Run 2 | Epoch 42] Train Acc 0.6859, Train Precision 0.6148, Train Recall 0.5222,Train F1 0.5416
+[2026-02-26 01:19:13,902][main.py][line:179][INFO] [Run 2 | Epoch 43] Val Acc 0.6867, Val Precision 0.5972, Val Recall 0.5310, Val F1 0.5380
+[2026-02-26 01:19:13,902][main.py][line:183][INFO] [Run 2 | Epoch 43] Train Acc 0.7041, Train Precision 0.6375, Train Recall 0.5437,Train F1 0.5603
+[2026-02-26 01:24:29,097][main.py][line:179][INFO] [Run 2 | Epoch 44] Val Acc 0.5901, Val Precision 0.4850, Val Recall 0.5037, Val F1 0.4703
+[2026-02-26 01:24:29,098][main.py][line:183][INFO] [Run 2 | Epoch 44] Train Acc 0.6704, Train Precision 0.5601, Train Recall 0.5438,Train F1 0.5287
+[2026-02-26 01:29:41,572][main.py][line:179][INFO] [Run 2 | Epoch 45] Val Acc 0.6373, Val Precision 0.5594, Val Recall 0.5286, Val F1 0.5301
+[2026-02-26 01:29:41,572][main.py][line:183][INFO] [Run 2 | Epoch 45] Train Acc 0.7063, Train Precision 0.6031, Train Recall 0.5762,Train F1 0.5754
+[2026-02-26 01:34:45,760][main.py][line:179][INFO] [Run 2 | Epoch 46] Val Acc 0.6524, Val Precision 0.5784, Val Recall 0.5599, Val F1 0.5567
+[2026-02-26 01:34:45,760][main.py][line:183][INFO] [Run 2 | Epoch 46] Train Acc 0.6988, Train Precision 0.6047, Train Recall 0.5533,Train F1 0.5661
+[2026-02-26 01:40:00,788][main.py][line:179][INFO] [Run 2 | Epoch 47] Val Acc 0.6245, Val Precision 0.5014, Val Recall 0.4954, Val F1 0.4838
+[2026-02-26 01:40:00,789][main.py][line:183][INFO] [Run 2 | Epoch 47] Train Acc 0.6399, Train Precision 0.5306, Train Recall 0.5171,Train F1 0.4874
+[2026-02-26 01:45:01,696][main.py][line:179][INFO] [Run 2 | Epoch 48] Val Acc 0.6974, Val Precision 0.6105, Val Recall 0.5368, Val F1 0.5126
+[2026-02-26 01:45:01,696][main.py][line:183][INFO] [Run 2 | Epoch 48] Train Acc 0.6923, Train Precision 0.6283, Train Recall 0.5462,Train F1 0.5342
+[2026-02-26 01:50:08,247][main.py][line:179][INFO] [Run 2 | Epoch 49] Val Acc 0.6416, Val Precision 0.5502, Val Recall 0.5425, Val F1 0.5323
+[2026-02-26 01:50:08,248][main.py][line:183][INFO] [Run 2 | Epoch 49] Train Acc 0.6881, Train Precision 0.5808, Train Recall 0.5481,Train F1 0.5505
+[2026-02-26 01:55:18,312][main.py][line:179][INFO] [Run 2 | Epoch 50] Val Acc 0.6674, Val Precision 0.6129, Val Recall 0.5277, Val F1 0.5345
+[2026-02-26 01:55:18,312][main.py][line:183][INFO] [Run 2 | Epoch 50] Train Acc 0.6972, Train Precision 0.6517, Train Recall 0.5382,Train F1 0.5546
+[2026-02-26 02:00:33,258][main.py][line:179][INFO] [Run 2 | Epoch 51] Val Acc 0.6717, Val Precision 0.5721, Val Recall 0.5258, Val F1 0.5179
+[2026-02-26 02:00:33,259][main.py][line:183][INFO] [Run 2 | Epoch 51] Train Acc 0.7105, Train Precision 0.6114, Train Recall 0.5730,Train F1 0.5859
+[2026-02-26 02:05:33,573][main.py][line:179][INFO] [Run 2 | Epoch 52] Val Acc 0.6760, Val Precision 0.5991, Val Recall 0.5229, Val F1 0.5089
+[2026-02-26 02:05:33,574][main.py][line:183][INFO] [Run 2 | Epoch 52] Train Acc 0.7132, Train Precision 0.6520, Train Recall 0.5577,Train F1 0.5670
+[2026-02-26 02:10:41,155][main.py][line:179][INFO] [Run 2 | Epoch 53] Val Acc 0.5021, Val Precision 0.4947, Val Recall 0.4391, Val F1 0.4317
+[2026-02-26 02:10:41,156][main.py][line:183][INFO] [Run 2 | Epoch 53] Train Acc 0.6784, Train Precision 0.5888, Train Recall 0.5584,Train F1 0.5623
+[2026-02-26 02:15:53,885][main.py][line:179][INFO] [Run 2 | Epoch 54] Val Acc 0.6781, Val Precision 0.5843, Val Recall 0.5118, Val F1 0.5172
+[2026-02-26 02:15:53,886][main.py][line:183][INFO] [Run 2 | Epoch 54] Train Acc 0.6886, Train Precision 0.6047, Train Recall 0.5326,Train F1 0.5531
+[2026-02-26 02:20:59,456][main.py][line:179][INFO] [Run 2 | Epoch 55] Val Acc 0.6695, Val Precision 0.5441, Val Recall 0.5551, Val F1 0.5472
+[2026-02-26 02:20:59,457][main.py][line:183][INFO] [Run 2 | Epoch 55] Train Acc 0.6977, Train Precision 0.5773, Train Recall 0.5764,Train F1 0.5765
+[2026-02-26 02:26:15,775][main.py][line:179][INFO] [Run 2 | Epoch 56] Val Acc 0.6609, Val Precision 0.5806, Val Recall 0.5110, Val F1 0.5114
+[2026-02-26 02:26:15,776][main.py][line:183][INFO] [Run 2 | Epoch 56] Train Acc 0.7170, Train Precision 0.6583, Train Recall 0.5597,Train F1 0.5748
+[2026-02-26 02:31:16,658][main.py][line:179][INFO] [Run 2 | Epoch 57] Val Acc 0.6524, Val Precision 0.5572, Val Recall 0.5013, Val F1 0.4844
+[2026-02-26 02:31:16,658][main.py][line:183][INFO] [Run 2 | Epoch 57] Train Acc 0.6934, Train Precision 0.6271, Train Recall 0.5393,Train F1 0.5301
+[2026-02-26 02:36:26,733][main.py][line:179][INFO] [Run 2 | Epoch 58] Val Acc 0.6781, Val Precision 0.5811, Val Recall 0.5113, Val F1 0.4821
+[2026-02-26 02:36:26,734][main.py][line:183][INFO] [Run 2 | Epoch 58] Train Acc 0.6870, Train Precision 0.6037, Train Recall 0.5299,Train F1 0.5192
+[2026-02-26 02:41:36,449][main.py][line:179][INFO] [Run 2 | Epoch 59] Val Acc 0.6631, Val Precision 0.5746, Val Recall 0.5277, Val F1 0.5128
+[2026-02-26 02:41:36,449][main.py][line:183][INFO] [Run 2 | Epoch 59] Train Acc 0.7047, Train Precision 0.5992, Train Recall 0.5558,Train F1 0.5615
+[2026-02-26 02:47:00,134][main.py][line:179][INFO] [Run 2 | Epoch 60] Val Acc 0.6481, Val Precision 0.5298, Val Recall 0.4994, Val F1 0.5039
+[2026-02-26 02:47:00,134][main.py][line:183][INFO] [Run 2 | Epoch 60] Train Acc 0.7202, Train Precision 0.6154, Train Recall 0.5916,Train F1 0.5976
+[2026-02-26 02:52:05,317][main.py][line:179][INFO] [Run 2 | Epoch 61] Val Acc 0.6202, Val Precision 0.5477, Val Recall 0.5123, Val F1 0.5084
+[2026-02-26 02:52:05,317][main.py][line:183][INFO] [Run 2 | Epoch 61] Train Acc 0.7100, Train Precision 0.6238, Train Recall 0.5631,Train F1 0.5818
+[2026-02-26 02:57:12,903][main.py][line:179][INFO] [Run 2 | Epoch 62] Val Acc 0.7146, Val Precision 0.6284, Val Recall 0.5737, Val F1 0.5795
+[2026-02-26 02:57:12,903][main.py][line:183][INFO] [Run 2 | Epoch 62] Train Acc 0.6956, Train Precision 0.6161, Train Recall 0.5425,Train F1 0.5416
+[2026-02-26 03:02:29,917][main.py][line:179][INFO] [Run 2 | Epoch 63] Val Acc 0.6094, Val Precision 0.5391, Val Recall 0.5155, Val F1 0.5103
+[2026-02-26 03:02:29,917][main.py][line:183][INFO] [Run 2 | Epoch 63] Train Acc 0.7068, Train Precision 0.5979, Train Recall 0.5906,Train F1 0.5831
+[2026-02-26 03:07:40,259][main.py][line:179][INFO] [Run 2 | Epoch 64] Val Acc 0.6288, Val Precision 0.5738, Val Recall 0.4997, Val F1 0.4999
+[2026-02-26 03:07:40,259][main.py][line:183][INFO] [Run 2 | Epoch 64] Train Acc 0.7186, Train Precision 0.6659, Train Recall 0.5718,Train F1 0.5867
+[2026-02-26 03:12:55,857][main.py][line:179][INFO] [Run 2 | Epoch 65] Val Acc 0.6781, Val Precision 0.5924, Val Recall 0.5285, Val F1 0.5331
+[2026-02-26 03:12:55,857][main.py][line:183][INFO] [Run 2 | Epoch 65] Train Acc 0.7325, Train Precision 0.6772, Train Recall 0.6005,Train F1 0.6186
+[2026-02-26 03:18:09,542][main.py][line:179][INFO] [Run 2 | Epoch 66] Val Acc 0.6202, Val Precision 0.5364, Val Recall 0.4876, Val F1 0.4781
+[2026-02-26 03:18:09,542][main.py][line:183][INFO] [Run 2 | Epoch 66] Train Acc 0.7116, Train Precision 0.6485, Train Recall 0.5717,Train F1 0.5722
+[2026-02-26 03:23:18,837][main.py][line:179][INFO] [Run 2 | Epoch 67] Val Acc 0.6545, Val Precision 0.5459, Val Recall 0.5083, Val F1 0.5022
+[2026-02-26 03:23:18,837][main.py][line:183][INFO] [Run 2 | Epoch 67] Train Acc 0.7143, Train Precision 0.6400, Train Recall 0.5729,Train F1 0.5805
+[2026-02-26 03:28:33,334][main.py][line:179][INFO] [Run 2 | Epoch 68] Val Acc 0.6567, Val Precision 0.5730, Val Recall 0.4973, Val F1 0.5011
+[2026-02-26 03:28:33,334][main.py][line:183][INFO] [Run 2 | Epoch 68] Train Acc 0.7084, Train Precision 0.6635, Train Recall 0.5405,Train F1 0.5549
+[2026-02-26 03:33:48,388][main.py][line:179][INFO] [Run 2 | Epoch 69] Val Acc 0.6481, Val Precision 0.5150, Val Recall 0.4939, Val F1 0.4986
+[2026-02-26 03:33:48,389][main.py][line:183][INFO] [Run 2 | Epoch 69] Train Acc 0.7084, Train Precision 0.5940, Train Recall 0.5721,Train F1 0.5769
+[2026-02-26 03:38:53,265][main.py][line:179][INFO] [Run 2 | Epoch 70] Val Acc 0.6245, Val Precision 0.5465, Val Recall 0.5364, Val F1 0.5299
+[2026-02-26 03:38:53,265][main.py][line:183][INFO] [Run 2 | Epoch 70] Train Acc 0.7170, Train Precision 0.6075, Train Recall 0.5940,Train F1 0.5968
+[2026-02-26 03:43:59,498][main.py][line:179][INFO] [Run 2 | Epoch 71] Val Acc 0.6223, Val Precision 0.4999, Val Recall 0.5173, Val F1 0.5029
+[2026-02-26 03:43:59,498][main.py][line:183][INFO] [Run 2 | Epoch 71] Train Acc 0.7084, Train Precision 0.5868, Train Recall 0.5861,Train F1 0.5829
+[2026-02-26 03:48:58,654][main.py][line:179][INFO] [Run 2 | Epoch 72] Val Acc 0.6567, Val Precision 0.5233, Val Recall 0.4918, Val F1 0.4884
+[2026-02-26 03:48:58,654][main.py][line:183][INFO] [Run 2 | Epoch 72] Train Acc 0.7239, Train Precision 0.6241, Train Recall 0.5793,Train F1 0.5916
+[2026-02-26 03:53:58,057][main.py][line:179][INFO] [Run 2 | Epoch 73] Val Acc 0.7082, Val Precision 0.5961, Val Recall 0.5591, Val F1 0.5680
+[2026-02-26 03:53:58,058][main.py][line:183][INFO] [Run 2 | Epoch 73] Train Acc 0.7111, Train Precision 0.6005, Train Recall 0.5791,Train F1 0.5869
+[2026-02-26 03:59:06,625][main.py][line:179][INFO] [Run 2 | Epoch 74] Val Acc 0.6545, Val Precision 0.5113, Val Recall 0.5021, Val F1 0.4960
+[2026-02-26 03:59:06,625][main.py][line:183][INFO] [Run 2 | Epoch 74] Train Acc 0.7138, Train Precision 0.6095, Train Recall 0.5877,Train F1 0.5923
+[2026-02-26 04:04:16,101][main.py][line:179][INFO] [Run 2 | Epoch 75] Val Acc 0.6567, Val Precision 0.5195, Val Recall 0.5268, Val F1 0.5222
+[2026-02-26 04:04:16,101][main.py][line:183][INFO] [Run 2 | Epoch 75] Train Acc 0.7202, Train Precision 0.6186, Train Recall 0.6155,Train F1 0.6114
+[2026-02-26 04:09:16,830][main.py][line:179][INFO] [Run 2 | Epoch 76] Val Acc 0.5708, Val Precision 0.5023, Val Recall 0.5074, Val F1 0.4929
+[2026-02-26 04:09:16,830][main.py][line:183][INFO] [Run 2 | Epoch 76] Train Acc 0.7121, Train Precision 0.6037, Train Recall 0.6055,Train F1 0.5982
+[2026-02-26 04:14:25,044][main.py][line:179][INFO] [Run 2 | Epoch 77] Val Acc 0.7124, Val Precision 0.6284, Val Recall 0.5493, Val F1 0.5618
+[2026-02-26 04:14:25,045][main.py][line:183][INFO] [Run 2 | Epoch 77] Train Acc 0.7073, Train Precision 0.6463, Train Recall 0.5519,Train F1 0.5771
+[2026-02-26 04:19:29,366][main.py][line:179][INFO] [Run 2 | Epoch 78] Val Acc 0.6781, Val Precision 0.5890, Val Recall 0.5280, Val F1 0.5297
+[2026-02-26 04:19:29,366][main.py][line:183][INFO] [Run 2 | Epoch 78] Train Acc 0.7335, Train Precision 0.6405, Train Recall 0.5976,Train F1 0.6110
+[2026-02-26 04:24:36,043][main.py][line:179][INFO] [Run 2 | Epoch 79] Val Acc 0.6931, Val Precision 0.5615, Val Recall 0.5360, Val F1 0.5297
+[2026-02-26 04:24:36,044][main.py][line:183][INFO] [Run 2 | Epoch 79] Train Acc 0.7207, Train Precision 0.6568, Train Recall 0.5746,Train F1 0.5938
+[2026-02-26 04:29:58,083][main.py][line:179][INFO] [Run 2 | Epoch 80] Val Acc 0.6953, Val Precision 0.6148, Val Recall 0.5632, Val F1 0.5685
+[2026-02-26 04:29:58,084][main.py][line:183][INFO] [Run 2 | Epoch 80] Train Acc 0.7255, Train Precision 0.6425, Train Recall 0.5857,Train F1 0.6024
+[2026-02-26 04:35:18,380][main.py][line:179][INFO] [Run 2 | Epoch 81] Val Acc 0.6867, Val Precision 0.6224, Val Recall 0.5339, Val F1 0.5443
+[2026-02-26 04:35:18,380][main.py][line:183][INFO] [Run 2 | Epoch 81] Train Acc 0.7410, Train Precision 0.6682, Train Recall 0.6051,Train F1 0.6228
+[2026-02-26 04:40:33,024][main.py][line:179][INFO] [Run 2 | Epoch 82] Val Acc 0.6567, Val Precision 0.5357, Val Recall 0.5363, Val F1 0.5355
+[2026-02-26 04:40:33,024][main.py][line:183][INFO] [Run 2 | Epoch 82] Train Acc 0.7223, Train Precision 0.6219, Train Recall 0.6078,Train F1 0.6138
+[2026-02-26 04:45:34,746][main.py][line:179][INFO] [Run 2 | Epoch 83] Val Acc 0.6888, Val Precision 0.6034, Val Recall 0.5529, Val F1 0.5499
+[2026-02-26 04:45:34,747][main.py][line:183][INFO] [Run 2 | Epoch 83] Train Acc 0.7410, Train Precision 0.6712, Train Recall 0.6073,Train F1 0.6203
+[2026-02-26 04:50:39,825][main.py][line:179][INFO] [Run 2 | Epoch 84] Val Acc 0.7082, Val Precision 0.6048, Val Recall 0.5607, Val F1 0.5479
+[2026-02-26 04:50:39,825][main.py][line:183][INFO] [Run 2 | Epoch 84] Train Acc 0.7014, Train Precision 0.6140, Train Recall 0.5513,Train F1 0.5637
+[2026-02-26 04:55:55,623][main.py][line:179][INFO] [Run 2 | Epoch 85] Val Acc 0.6974, Val Precision 0.5907, Val Recall 0.5515, Val F1 0.5486
+[2026-02-26 04:55:55,623][main.py][line:183][INFO] [Run 2 | Epoch 85] Train Acc 0.7330, Train Precision 0.6439, Train Recall 0.6056,Train F1 0.6189
+[2026-02-26 05:01:07,302][main.py][line:179][INFO] [Run 2 | Epoch 86] Val Acc 0.6674, Val Precision 0.5669, Val Recall 0.5374, Val F1 0.5259
+[2026-02-26 05:01:07,302][main.py][line:183][INFO] [Run 2 | Epoch 86] Train Acc 0.7212, Train Precision 0.6117, Train Recall 0.6024,Train F1 0.6061
+[2026-02-26 05:06:22,829][main.py][line:179][INFO] [Run 2 | Epoch 87] Val Acc 0.6953, Val Precision 0.5906, Val Recall 0.5451, Val F1 0.5525
+[2026-02-26 05:06:22,829][main.py][line:183][INFO] [Run 2 | Epoch 87] Train Acc 0.7180, Train Precision 0.6419, Train Recall 0.5827,Train F1 0.6005
+[2026-02-26 05:11:36,797][main.py][line:179][INFO] [Run 2 | Epoch 88] Val Acc 0.6738, Val Precision 0.5379, Val Recall 0.5353, Val F1 0.5334
+[2026-02-26 05:11:36,798][main.py][line:183][INFO] [Run 2 | Epoch 88] Train Acc 0.7228, Train Precision 0.6285, Train Recall 0.5958,Train F1 0.6017
+[2026-02-26 05:16:41,634][main.py][line:179][INFO] [Run 2 | Epoch 89] Val Acc 0.6695, Val Precision 0.5276, Val Recall 0.5116, Val F1 0.4963
+[2026-02-26 05:16:41,635][main.py][line:183][INFO] [Run 2 | Epoch 89] Train Acc 0.7432, Train Precision 0.6847, Train Recall 0.6113,Train F1 0.6167
+[2026-02-26 05:21:50,737][main.py][line:179][INFO] [Run 2 | Epoch 90] Val Acc 0.6760, Val Precision 0.5461, Val Recall 0.5392, Val F1 0.5410
+[2026-02-26 05:21:50,737][main.py][line:183][INFO] [Run 2 | Epoch 90] Train Acc 0.7373, Train Precision 0.6547, Train Recall 0.6218,Train F1 0.6251
+[2026-02-26 05:26:57,792][main.py][line:179][INFO] [Run 2 | Epoch 91] Val Acc 0.7060, Val Precision 0.6438, Val Recall 0.5665, Val F1 0.5798
+[2026-02-26 05:26:57,793][main.py][line:183][INFO] [Run 2 | Epoch 91] Train Acc 0.7357, Train Precision 0.6524, Train Recall 0.6035,Train F1 0.6203
+[2026-02-26 05:32:19,451][main.py][line:179][INFO] [Run 2 | Epoch 92] Val Acc 0.6845, Val Precision 0.6102, Val Recall 0.5425, Val F1 0.5542
+[2026-02-26 05:32:19,451][main.py][line:183][INFO] [Run 2 | Epoch 92] Train Acc 0.7501, Train Precision 0.6751, Train Recall 0.6223,Train F1 0.6406
+[2026-02-26 05:37:36,009][main.py][line:179][INFO] [Run 2 | Epoch 93] Val Acc 0.7124, Val Precision 0.6117, Val Recall 0.5757, Val F1 0.5788
+[2026-02-26 05:37:36,009][main.py][line:183][INFO] [Run 2 | Epoch 93] Train Acc 0.7453, Train Precision 0.6609, Train Recall 0.6173,Train F1 0.6312
+[2026-02-26 05:42:46,302][main.py][line:179][INFO] [Run 2 | Epoch 94] Val Acc 0.6888, Val Precision 0.5798, Val Recall 0.5514, Val F1 0.5575
+[2026-02-26 05:42:46,302][main.py][line:183][INFO] [Run 2 | Epoch 94] Train Acc 0.7218, Train Precision 0.6296, Train Recall 0.5837,Train F1 0.6000
+[2026-02-26 05:47:55,166][main.py][line:179][INFO] [Run 2 | Epoch 95] Val Acc 0.7039, Val Precision 0.5886, Val Recall 0.5595, Val F1 0.5617
+[2026-02-26 05:47:55,166][main.py][line:183][INFO] [Run 2 | Epoch 95] Train Acc 0.7287, Train Precision 0.6394, Train Recall 0.5866,Train F1 0.6052
+[2026-02-26 05:53:08,182][main.py][line:179][INFO] [Run 2 | Epoch 96] Val Acc 0.7060, Val Precision 0.6059, Val Recall 0.5767, Val F1 0.5780
+[2026-02-26 05:53:08,182][main.py][line:183][INFO] [Run 2 | Epoch 96] Train Acc 0.7475, Train Precision 0.6763, Train Recall 0.6267,Train F1 0.6427
+[2026-02-26 05:58:24,553][main.py][line:179][INFO] [Run 2 | Epoch 97] Val Acc 0.7060, Val Precision 0.6073, Val Recall 0.5800, Val F1 0.5842
+[2026-02-26 05:58:24,553][main.py][line:183][INFO] [Run 2 | Epoch 97] Train Acc 0.7544, Train Precision 0.6620, Train Recall 0.6449,Train F1 0.6511
+[2026-02-26 06:03:46,011][main.py][line:179][INFO] [Run 2 | Epoch 98] Val Acc 0.6953, Val Precision 0.6266, Val Recall 0.5527, Val F1 0.5585
+[2026-02-26 06:03:46,011][main.py][line:183][INFO] [Run 2 | Epoch 98] Train Acc 0.7426, Train Precision 0.7073, Train Recall 0.6177,Train F1 0.6273
+[2026-02-26 06:09:06,338][main.py][line:179][INFO] [Run 2 | Epoch 99] Val Acc 0.7124, Val Precision 0.6029, Val Recall 0.6119, Val F1 0.6033
+[2026-02-26 06:09:06,339][main.py][line:183][INFO] [Run 2 | Epoch 99] Train Acc 0.7528, Train Precision 0.6519, Train Recall 0.6472,Train F1 0.6457
+[2026-02-26 06:14:30,987][main.py][line:179][INFO] [Run 2 | Epoch 100] Val Acc 0.7253, Val Precision 0.6279, Val Recall 0.5837, Val F1 0.5896
+[2026-02-26 06:14:30,987][main.py][line:183][INFO] [Run 2 | Epoch 100] Train Acc 0.7405, Train Precision 0.6679, Train Recall 0.6193,Train F1 0.6280
+[2026-02-26 06:19:50,653][main.py][line:179][INFO] [Run 2 | Epoch 101] Val Acc 0.6996, Val Precision 0.6079, Val Recall 0.5717, Val F1 0.5804
+[2026-02-26 06:19:50,654][main.py][line:183][INFO] [Run 2 | Epoch 101] Train Acc 0.7475, Train Precision 0.6714, Train Recall 0.6323,Train F1 0.6457
+[2026-02-26 06:24:55,697][main.py][line:179][INFO] [Run 2 | Epoch 102] Val Acc 0.6953, Val Precision 0.6034, Val Recall 0.5371, Val F1 0.5507
+[2026-02-26 06:24:55,698][main.py][line:183][INFO] [Run 2 | Epoch 102] Train Acc 0.7346, Train Precision 0.6926, Train Recall 0.5996,Train F1 0.6112
+[2026-02-26 06:29:51,919][main.py][line:179][INFO] [Run 2 | Epoch 103] Val Acc 0.7103, Val Precision 0.6310, Val Recall 0.5708, Val F1 0.5866
+[2026-02-26 06:29:51,920][main.py][line:183][INFO] [Run 2 | Epoch 103] Train Acc 0.7389, Train Precision 0.6358, Train Recall 0.6249,Train F1 0.6288
+[2026-02-26 06:35:00,857][main.py][line:179][INFO] [Run 2 | Epoch 104] Val Acc 0.6674, Val Precision 0.5604, Val Recall 0.5660, Val F1 0.5545
+[2026-02-26 06:35:00,858][main.py][line:183][INFO] [Run 2 | Epoch 104] Train Acc 0.7469, Train Precision 0.6627, Train Recall 0.6503,Train F1 0.6461
+[2026-02-26 06:40:16,817][main.py][line:179][INFO] [Run 2 | Epoch 105] Val Acc 0.6974, Val Precision 0.6499, Val Recall 0.5531, Val F1 0.5661
+[2026-02-26 06:40:16,818][main.py][line:183][INFO] [Run 2 | Epoch 105] Train Acc 0.7480, Train Precision 0.7154, Train Recall 0.6049,Train F1 0.6251
+[2026-02-26 06:45:25,860][main.py][line:179][INFO] [Run 2 | Epoch 106] Val Acc 0.6845, Val Precision 0.6151, Val Recall 0.5766, Val F1 0.5816
+[2026-02-26 06:45:25,861][main.py][line:183][INFO] [Run 2 | Epoch 106] Train Acc 0.7539, Train Precision 0.6777, Train Recall 0.6558,Train F1 0.6585
+[2026-02-26 06:50:42,038][main.py][line:179][INFO] [Run 2 | Epoch 107] Val Acc 0.7189, Val Precision 0.6304, Val Recall 0.6137, Val F1 0.6199
+[2026-02-26 06:50:42,039][main.py][line:183][INFO] [Run 2 | Epoch 107] Train Acc 0.7566, Train Precision 0.6795, Train Recall 0.6486,Train F1 0.6613
+[2026-02-26 06:56:17,443][main.py][line:179][INFO] [Run 2 | Epoch 108] Val Acc 0.6717, Val Precision 0.5738, Val Recall 0.5821, Val F1 0.5727
+[2026-02-26 06:56:17,444][main.py][line:183][INFO] [Run 2 | Epoch 108] Train Acc 0.7293, Train Precision 0.6487, Train Recall 0.6373,Train F1 0.6236
+[2026-02-26 07:01:33,090][main.py][line:179][INFO] [Run 2 | Epoch 109] Val Acc 0.7189, Val Precision 0.6246, Val Recall 0.5852, Val F1 0.5826
+[2026-02-26 07:01:33,090][main.py][line:183][INFO] [Run 2 | Epoch 109] Train Acc 0.7346, Train Precision 0.6639, Train Recall 0.6141,Train F1 0.6159
+[2026-02-26 07:06:50,916][main.py][line:179][INFO] [Run 2 | Epoch 110] Val Acc 0.7017, Val Precision 0.6011, Val Recall 0.5872, Val F1 0.5906
+[2026-02-26 07:06:50,916][main.py][line:183][INFO] [Run 2 | Epoch 110] Train Acc 0.7576, Train Precision 0.6958, Train Recall 0.6426,Train F1 0.6596
+[2026-02-26 07:11:57,765][main.py][line:179][INFO] [Run 2 | Epoch 111] Val Acc 0.6867, Val Precision 0.5856, Val Recall 0.5654, Val F1 0.5710
+[2026-02-26 07:11:57,766][main.py][line:183][INFO] [Run 2 | Epoch 111] Train Acc 0.7432, Train Precision 0.6485, Train Recall 0.6522,Train F1 0.6498
+[2026-02-26 07:17:17,505][main.py][line:179][INFO] [Run 2 | Epoch 112] Val Acc 0.7039, Val Precision 0.5938, Val Recall 0.5565, Val F1 0.5670
+[2026-02-26 07:17:17,506][main.py][line:183][INFO] [Run 2 | Epoch 112] Train Acc 0.7517, Train Precision 0.6720, Train Recall 0.6293,Train F1 0.6449
+[2026-02-26 07:22:30,475][main.py][line:179][INFO] [Run 2 | Epoch 113] Val Acc 0.6567, Val Precision 0.5975, Val Recall 0.5924, Val F1 0.5851
+[2026-02-26 07:22:30,476][main.py][line:183][INFO] [Run 2 | Epoch 113] Train Acc 0.7491, Train Precision 0.6802, Train Recall 0.6619,Train F1 0.6661
+[2026-02-26 07:27:32,156][main.py][line:179][INFO] [Run 2 | Epoch 114] Val Acc 0.7039, Val Precision 0.5996, Val Recall 0.5890, Val F1 0.5883
+[2026-02-26 07:27:32,156][main.py][line:183][INFO] [Run 2 | Epoch 114] Train Acc 0.7657, Train Precision 0.6825, Train Recall 0.6683,Train F1 0.6746
+[2026-02-26 07:32:39,635][main.py][line:179][INFO] [Run 2 | Epoch 115] Val Acc 0.7361, Val Precision 0.6576, Val Recall 0.6046, Val F1 0.6196
+[2026-02-26 07:32:39,635][main.py][line:183][INFO] [Run 2 | Epoch 115] Train Acc 0.7517, Train Precision 0.6925, Train Recall 0.6310,Train F1 0.6497
+[2026-02-26 07:37:59,983][main.py][line:179][INFO] [Run 2 | Epoch 116] Val Acc 0.6888, Val Precision 0.5931, Val Recall 0.5787, Val F1 0.5803
+[2026-02-26 07:37:59,984][main.py][line:183][INFO] [Run 2 | Epoch 116] Train Acc 0.7603, Train Precision 0.6996, Train Recall 0.6584,Train F1 0.6704
+[2026-02-26 07:43:11,216][main.py][line:179][INFO] [Run 2 | Epoch 117] Val Acc 0.6910, Val Precision 0.5713, Val Recall 0.5870, Val F1 0.5721
+[2026-02-26 07:43:11,216][main.py][line:183][INFO] [Run 2 | Epoch 117] Train Acc 0.7721, Train Precision 0.6974, Train Recall 0.6822,Train F1 0.6810
+[2026-02-26 07:48:27,247][main.py][line:179][INFO] [Run 2 | Epoch 118] Val Acc 0.7210, Val Precision 0.6276, Val Recall 0.6173, Val F1 0.6190
+[2026-02-26 07:48:27,248][main.py][line:183][INFO] [Run 2 | Epoch 118] Train Acc 0.7603, Train Precision 0.6920, Train Recall 0.6557,Train F1 0.6633
+[2026-02-26 07:53:43,157][main.py][line:179][INFO] [Run 2 | Epoch 119] Val Acc 0.6717, Val Precision 0.5917, Val Recall 0.5371, Val F1 0.5446
+[2026-02-26 07:53:43,158][main.py][line:183][INFO] [Run 2 | Epoch 119] Train Acc 0.7453, Train Precision 0.6946, Train Recall 0.6091,Train F1 0.6200
+[2026-02-26 07:59:04,515][main.py][line:179][INFO] [Run 2 | Epoch 120] Val Acc 0.7425, Val Precision 0.6559, Val Recall 0.6386, Val F1 0.6388
+[2026-02-26 07:59:04,515][main.py][line:183][INFO] [Run 2 | Epoch 120] Train Acc 0.7646, Train Precision 0.6838, Train Recall 0.6719,Train F1 0.6751
+[2026-02-26 08:04:30,784][main.py][line:179][INFO] [Run 2 | Epoch 121] Val Acc 0.7382, Val Precision 0.6642, Val Recall 0.6180, Val F1 0.6316
+[2026-02-26 08:04:30,785][main.py][line:183][INFO] [Run 2 | Epoch 121] Train Acc 0.7731, Train Precision 0.7021, Train Recall 0.6737,Train F1 0.6832
+[2026-02-26 08:09:41,468][main.py][line:179][INFO] [Run 2 | Epoch 122] Val Acc 0.7167, Val Precision 0.6297, Val Recall 0.6114, Val F1 0.6176
+[2026-02-26 08:09:41,469][main.py][line:183][INFO] [Run 2 | Epoch 122] Train Acc 0.7614, Train Precision 0.6796, Train Recall 0.6653,Train F1 0.6701
+[2026-02-26 08:14:45,075][main.py][line:179][INFO] [Run 2 | Epoch 123] Val Acc 0.6824, Val Precision 0.5892, Val Recall 0.5566, Val F1 0.5665
+[2026-02-26 08:14:45,076][main.py][line:183][INFO] [Run 2 | Epoch 123] Train Acc 0.7608, Train Precision 0.7142, Train Recall 0.6656,Train F1 0.6803
+[2026-02-26 08:19:54,129][main.py][line:179][INFO] [Run 2 | Epoch 124] Val Acc 0.7060, Val Precision 0.5855, Val Recall 0.5890, Val F1 0.5407
+[2026-02-26 08:19:54,129][main.py][line:183][INFO] [Run 2 | Epoch 124] Train Acc 0.7437, Train Precision 0.6962, Train Recall 0.6311,Train F1 0.6272
+[2026-02-26 08:25:01,548][main.py][line:179][INFO] [Run 2 | Epoch 125] Val Acc 0.7253, Val Precision 0.6324, Val Recall 0.6358, Val F1 0.6300
+[2026-02-26 08:25:01,548][main.py][line:183][INFO] [Run 2 | Epoch 125] Train Acc 0.7731, Train Precision 0.7000, Train Recall 0.6760,Train F1 0.6852
+[2026-02-26 08:30:16,445][main.py][line:179][INFO] [Run 2 | Epoch 126] Val Acc 0.6824, Val Precision 0.5903, Val Recall 0.5931, Val F1 0.5791
+[2026-02-26 08:30:16,446][main.py][line:183][INFO] [Run 2 | Epoch 126] Train Acc 0.7726, Train Precision 0.7115, Train Recall 0.6824,Train F1 0.6863
+[2026-02-26 08:35:13,453][main.py][line:179][INFO] [Run 2 | Epoch 127] Val Acc 0.7618, Val Precision 0.7377, Val Recall 0.6350, Val F1 0.6553
+[2026-02-26 08:35:13,453][main.py][line:183][INFO] [Run 2 | Epoch 127] Train Acc 0.7614, Train Precision 0.7169, Train Recall 0.6284,Train F1 0.6487
+[2026-02-26 08:40:51,077][main.py][line:179][INFO] [Run 2 | Epoch 128] Val Acc 0.7210, Val Precision 0.6560, Val Recall 0.5967, Val F1 0.6013
+[2026-02-26 08:40:51,078][main.py][line:183][INFO] [Run 2 | Epoch 128] Train Acc 0.7485, Train Precision 0.7294, Train Recall 0.6167,Train F1 0.6288
+[2026-02-26 08:46:44,363][main.py][line:179][INFO] [Run 2 | Epoch 129] Val Acc 0.7339, Val Precision 0.6428, Val Recall 0.6165, Val F1 0.6261
+[2026-02-26 08:46:44,364][main.py][line:183][INFO] [Run 2 | Epoch 129] Train Acc 0.7699, Train Precision 0.6955, Train Recall 0.6731,Train F1 0.6807
+[2026-02-26 08:52:25,467][main.py][line:179][INFO] [Run 2 | Epoch 130] Val Acc 0.7318, Val Precision 0.6428, Val Recall 0.6060, Val F1 0.6162
+[2026-02-26 08:52:25,467][main.py][line:183][INFO] [Run 2 | Epoch 130] Train Acc 0.7651, Train Precision 0.7086, Train Recall 0.6556,Train F1 0.6766
+[2026-02-26 08:58:02,994][main.py][line:179][INFO] [Run 2 | Epoch 131] Val Acc 0.6910, Val Precision 0.6367, Val Recall 0.6199, Val F1 0.6204
+[2026-02-26 08:58:02,995][main.py][line:183][INFO] [Run 2 | Epoch 131] Train Acc 0.7608, Train Precision 0.7223, Train Recall 0.6561,Train F1 0.6668
+[2026-02-26 09:03:57,216][main.py][line:179][INFO] [Run 2 | Epoch 132] Val Acc 0.6845, Val Precision 0.5733, Val Recall 0.5647, Val F1 0.5521
+[2026-02-26 09:03:57,216][main.py][line:183][INFO] [Run 2 | Epoch 132] Train Acc 0.7234, Train Precision 0.6619, Train Recall 0.6075,Train F1 0.6147
+[2026-02-26 09:09:45,235][main.py][line:179][INFO] [Run 2 | Epoch 133] Val Acc 0.7275, Val Precision 0.6455, Val Recall 0.6089, Val F1 0.6190
+[2026-02-26 09:09:45,235][main.py][line:183][INFO] [Run 2 | Epoch 133] Train Acc 0.7796, Train Precision 0.7369, Train Recall 0.6866,Train F1 0.6972
+[2026-02-26 09:15:36,770][main.py][line:179][INFO] [Run 2 | Epoch 134] Val Acc 0.6352, Val Precision 0.5745, Val Recall 0.5574, Val F1 0.5503
+[2026-02-26 09:15:36,770][main.py][line:183][INFO] [Run 2 | Epoch 134] Train Acc 0.7368, Train Precision 0.6900, Train Recall 0.6521,Train F1 0.6499
+[2026-02-26 09:21:28,815][main.py][line:179][INFO] [Run 2 | Epoch 135] Val Acc 0.7167, Val Precision 0.6086, Val Recall 0.5948, Val F1 0.5874
+[2026-02-26 09:21:28,815][main.py][line:183][INFO] [Run 2 | Epoch 135] Train Acc 0.7555, Train Precision 0.6849, Train Recall 0.6562,Train F1 0.6594
+[2026-02-26 09:27:20,710][main.py][line:179][INFO] [Run 2 | Epoch 136] Val Acc 0.7124, Val Precision 0.6281, Val Recall 0.6157, Val F1 0.6195
+[2026-02-26 09:27:20,711][main.py][line:183][INFO] [Run 2 | Epoch 136] Train Acc 0.7657, Train Precision 0.6903, Train Recall 0.6728,Train F1 0.6670
+[2026-02-26 09:32:59,768][main.py][line:179][INFO] [Run 2 | Epoch 137] Val Acc 0.7103, Val Precision 0.6316, Val Recall 0.5914, Val F1 0.5954
+[2026-02-26 09:32:59,769][main.py][line:183][INFO] [Run 2 | Epoch 137] Train Acc 0.7651, Train Precision 0.6942, Train Recall 0.6575,Train F1 0.6706
+[2026-02-26 09:38:46,973][main.py][line:179][INFO] [Run 2 | Epoch 138] Val Acc 0.7275, Val Precision 0.6502, Val Recall 0.5959, Val F1 0.5863
+[2026-02-26 09:38:46,973][main.py][line:183][INFO] [Run 2 | Epoch 138] Train Acc 0.7523, Train Precision 0.7008, Train Recall 0.6298,Train F1 0.6385
+[2026-02-26 09:44:26,603][main.py][line:179][INFO] [Run 2 | Epoch 139] Val Acc 0.7468, Val Precision 0.6868, Val Recall 0.6182, Val F1 0.6287
+[2026-02-26 09:44:26,603][main.py][line:183][INFO] [Run 2 | Epoch 139] Train Acc 0.7544, Train Precision 0.7003, Train Recall 0.6209,Train F1 0.6369
+[2026-02-26 09:50:10,408][main.py][line:179][INFO] [Run 2 | Epoch 140] Val Acc 0.7103, Val Precision 0.5987, Val Recall 0.5601, Val F1 0.5697
+[2026-02-26 09:50:10,408][main.py][line:183][INFO] [Run 2 | Epoch 140] Train Acc 0.7598, Train Precision 0.6934, Train Recall 0.6405,Train F1 0.6586
+[2026-02-26 09:55:58,195][main.py][line:179][INFO] [Run 2 | Epoch 141] Val Acc 0.7210, Val Precision 0.6282, Val Recall 0.6394, Val F1 0.6319
+[2026-02-26 09:55:58,195][main.py][line:183][INFO] [Run 2 | Epoch 141] Train Acc 0.7897, Train Precision 0.7207, Train Recall 0.7101,Train F1 0.7142
+[2026-02-26 10:01:41,822][main.py][line:179][INFO] [Run 2 | Epoch 142] Val Acc 0.7382, Val Precision 0.6462, Val Recall 0.6092, Val F1 0.6228
+[2026-02-26 10:01:41,823][main.py][line:183][INFO] [Run 2 | Epoch 142] Train Acc 0.7806, Train Precision 0.7202, Train Recall 0.6884,Train F1 0.7012
+[2026-02-26 10:07:24,181][main.py][line:179][INFO] [Run 2 | Epoch 143] Val Acc 0.7468, Val Precision 0.6771, Val Recall 0.6160, Val F1 0.6245
+[2026-02-26 10:07:24,181][main.py][line:183][INFO] [Run 2 | Epoch 143] Train Acc 0.7801, Train Precision 0.7096, Train Recall 0.6879,Train F1 0.6938
+[2026-02-26 10:13:16,523][main.py][line:179][INFO] [Run 2 | Epoch 144] Val Acc 0.7017, Val Precision 0.6040, Val Recall 0.5761, Val F1 0.5849
+[2026-02-26 10:13:16,524][main.py][line:183][INFO] [Run 2 | Epoch 144] Train Acc 0.7737, Train Precision 0.7163, Train Recall 0.6523,Train F1 0.6706
+[2026-02-26 10:18:56,156][main.py][line:179][INFO] [Run 2 | Epoch 145] Val Acc 0.7361, Val Precision 0.6370, Val Recall 0.6429, Val F1 0.6394
+[2026-02-26 10:18:56,156][main.py][line:183][INFO] [Run 2 | Epoch 145] Train Acc 0.7801, Train Precision 0.7031, Train Recall 0.6895,Train F1 0.6954
+[2026-02-26 10:24:40,551][main.py][line:179][INFO] [Run 2 | Epoch 146] Val Acc 0.7468, Val Precision 0.6911, Val Recall 0.6250, Val F1 0.6376
+[2026-02-26 10:24:40,551][main.py][line:183][INFO] [Run 2 | Epoch 146] Train Acc 0.7640, Train Precision 0.7189, Train Recall 0.6566,Train F1 0.6779
+[2026-02-26 10:30:38,932][main.py][line:179][INFO] [Run 2 | Epoch 147] Val Acc 0.7361, Val Precision 0.6465, Val Recall 0.6283, Val F1 0.6248
+[2026-02-26 10:30:38,932][main.py][line:183][INFO] [Run 2 | Epoch 147] Train Acc 0.7715, Train Precision 0.7086, Train Recall 0.6863,Train F1 0.6863
+[2026-02-26 10:36:34,621][main.py][line:179][INFO] [Run 2 | Epoch 148] Val Acc 0.7639, Val Precision 0.6769, Val Recall 0.6609, Val F1 0.6681
+[2026-02-26 10:36:34,621][main.py][line:183][INFO] [Run 2 | Epoch 148] Train Acc 0.7790, Train Precision 0.7196, Train Recall 0.6725,Train F1 0.6909
+[2026-02-26 10:42:26,460][main.py][line:179][INFO] [Run 2 | Epoch 149] Val Acc 0.7446, Val Precision 0.6800, Val Recall 0.6363, Val F1 0.6491
+[2026-02-26 10:42:26,460][main.py][line:183][INFO] [Run 2 | Epoch 149] Train Acc 0.7860, Train Precision 0.7209, Train Recall 0.6997,Train F1 0.7077
+[2026-02-26 10:48:08,102][main.py][line:179][INFO] [Run 2 | Epoch 150] Val Acc 0.7275, Val Precision 0.6546, Val Recall 0.6195, Val F1 0.6311
+[2026-02-26 10:48:08,102][main.py][line:183][INFO] [Run 2 | Epoch 150] Train Acc 0.7838, Train Precision 0.7147, Train Recall 0.6937,Train F1 0.7019
+[2026-02-26 10:53:27,072][main.py][line:179][INFO] [Run 2 | Epoch 151] Val Acc 0.7339, Val Precision 0.6352, Val Recall 0.6480, Val F1 0.6388
+[2026-02-26 10:53:27,072][main.py][line:183][INFO] [Run 2 | Epoch 151] Train Acc 0.7737, Train Precision 0.6997, Train Recall 0.6790,Train F1 0.6876
+[2026-02-26 10:58:29,610][main.py][line:179][INFO] [Run 2 | Epoch 152] Val Acc 0.7361, Val Precision 0.6228, Val Recall 0.6185, Val F1 0.6166
+[2026-02-26 10:58:29,610][main.py][line:183][INFO] [Run 2 | Epoch 152] Train Acc 0.7822, Train Precision 0.7026, Train Recall 0.6921,Train F1 0.6967
+[2026-02-26 11:03:40,478][main.py][line:179][INFO] [Run 2 | Epoch 153] Val Acc 0.7382, Val Precision 0.6522, Val Recall 0.6220, Val F1 0.6301
+[2026-02-26 11:03:40,479][main.py][line:183][INFO] [Run 2 | Epoch 153] Train Acc 0.7854, Train Precision 0.7212, Train Recall 0.6914,Train F1 0.7008
+[2026-02-26 11:08:54,392][main.py][line:179][INFO] [Run 2 | Epoch 154] Val Acc 0.7361, Val Precision 0.6767, Val Recall 0.5939, Val F1 0.6108
+[2026-02-26 11:08:54,393][main.py][line:183][INFO] [Run 2 | Epoch 154] Train Acc 0.7710, Train Precision 0.7388, Train Recall 0.6453,Train F1 0.6643
+[2026-02-26 11:14:05,507][main.py][line:179][INFO] [Run 2 | Epoch 155] Val Acc 0.7618, Val Precision 0.6786, Val Recall 0.6509, Val F1 0.6576
+[2026-02-26 11:14:05,507][main.py][line:183][INFO] [Run 2 | Epoch 155] Train Acc 0.7833, Train Precision 0.7160, Train Recall 0.6838,Train F1 0.6971
+[2026-02-26 11:19:19,574][main.py][line:179][INFO] [Run 2 | Epoch 156] Val Acc 0.7275, Val Precision 0.6383, Val Recall 0.6319, Val F1 0.6319
+[2026-02-26 11:19:19,574][main.py][line:183][INFO] [Run 2 | Epoch 156] Train Acc 0.7833, Train Precision 0.7215, Train Recall 0.6879,Train F1 0.7006
+[2026-02-26 11:24:34,992][main.py][line:179][INFO] [Run 2 | Epoch 157] Val Acc 0.7382, Val Precision 0.6368, Val Recall 0.6319, Val F1 0.6318
+[2026-02-26 11:24:34,992][main.py][line:183][INFO] [Run 2 | Epoch 157] Train Acc 0.7790, Train Precision 0.7067, Train Recall 0.6858,Train F1 0.6947
+[2026-02-26 11:29:53,003][main.py][line:179][INFO] [Run 2 | Epoch 158] Val Acc 0.7597, Val Precision 0.6890, Val Recall 0.6510, Val F1 0.6606
+[2026-02-26 11:29:53,004][main.py][line:183][INFO] [Run 2 | Epoch 158] Train Acc 0.7892, Train Precision 0.7463, Train Recall 0.6753,Train F1 0.6969
+[2026-02-26 11:35:06,709][main.py][line:179][INFO] [Run 2 | Epoch 159] Val Acc 0.7318, Val Precision 0.6385, Val Recall 0.6083, Val F1 0.6133
+[2026-02-26 11:35:06,710][main.py][line:183][INFO] [Run 2 | Epoch 159] Train Acc 0.7924, Train Precision 0.7460, Train Recall 0.6956,Train F1 0.7119
+[2026-02-26 11:40:11,927][main.py][line:179][INFO] [Run 2 | Epoch 160] Val Acc 0.7382, Val Precision 0.6447, Val Recall 0.6338, Val F1 0.6388
+[2026-02-26 11:40:11,928][main.py][line:183][INFO] [Run 2 | Epoch 160] Train Acc 0.7940, Train Precision 0.7506, Train Recall 0.6956,Train F1 0.7133
+[2026-02-26 11:45:20,365][main.py][line:179][INFO] [Run 2 | Epoch 161] Val Acc 0.7532, Val Precision 0.6948, Val Recall 0.6410, Val F1 0.6511
+[2026-02-26 11:45:20,365][main.py][line:183][INFO] [Run 2 | Epoch 161] Train Acc 0.7903, Train Precision 0.7486, Train Recall 0.6914,Train F1 0.7064
+[2026-02-26 11:50:26,651][main.py][line:179][INFO] [Run 2 | Epoch 162] Val Acc 0.7554, Val Precision 0.6616, Val Recall 0.6466, Val F1 0.6513
+[2026-02-26 11:50:26,652][main.py][line:183][INFO] [Run 2 | Epoch 162] Train Acc 0.7860, Train Precision 0.7063, Train Recall 0.7089,Train F1 0.7054
+[2026-02-26 11:55:39,313][main.py][line:179][INFO] [Run 2 | Epoch 163] Val Acc 0.7275, Val Precision 0.6206, Val Recall 0.6191, Val F1 0.6075
+[2026-02-26 11:55:39,313][main.py][line:183][INFO] [Run 2 | Epoch 163] Train Acc 0.7758, Train Precision 0.7256, Train Recall 0.6874,Train F1 0.6854
+[2026-02-26 12:00:40,707][main.py][line:179][INFO] [Run 2 | Epoch 164] Val Acc 0.7532, Val Precision 0.6653, Val Recall 0.6417, Val F1 0.6434
+[2026-02-26 12:00:40,707][main.py][line:183][INFO] [Run 2 | Epoch 164] Train Acc 0.7983, Train Precision 0.7427, Train Recall 0.7112,Train F1 0.7182
+[2026-02-26 12:05:41,442][main.py][line:179][INFO] [Run 2 | Epoch 165] Val Acc 0.7597, Val Precision 0.6863, Val Recall 0.6268, Val F1 0.6427
+[2026-02-26 12:05:41,442][main.py][line:183][INFO] [Run 2 | Epoch 165] Train Acc 0.7940, Train Precision 0.7600, Train Recall 0.6870,Train F1 0.7099
+[2026-02-26 12:11:23,153][main.py][line:179][INFO] [Run 2 | Epoch 166] Val Acc 0.7339, Val Precision 0.6411, Val Recall 0.6525, Val F1 0.6460
+[2026-02-26 12:11:23,153][main.py][line:183][INFO] [Run 2 | Epoch 166] Train Acc 0.7817, Train Precision 0.7228, Train Recall 0.7154,Train F1 0.7148
+[2026-02-26 12:17:18,438][main.py][line:179][INFO] [Run 2 | Epoch 167] Val Acc 0.7339, Val Precision 0.6310, Val Recall 0.6452, Val F1 0.6350
+[2026-02-26 12:17:18,439][main.py][line:183][INFO] [Run 2 | Epoch 167] Train Acc 0.7828, Train Precision 0.7034, Train Recall 0.7156,Train F1 0.7053
+[2026-02-26 12:23:05,133][main.py][line:179][INFO] [Run 2 | Epoch 168] Val Acc 0.7704, Val Precision 0.6974, Val Recall 0.6708, Val F1 0.6764
+[2026-02-26 12:23:05,133][main.py][line:183][INFO] [Run 2 | Epoch 168] Train Acc 0.7978, Train Precision 0.7398, Train Recall 0.7192,Train F1 0.7262
+[2026-02-26 12:28:57,667][main.py][line:179][INFO] [Run 2 | Epoch 169] Val Acc 0.7382, Val Precision 0.6580, Val Recall 0.6371, Val F1 0.6455
+[2026-02-26 12:28:57,668][main.py][line:183][INFO] [Run 2 | Epoch 169] Train Acc 0.7945, Train Precision 0.7504, Train Recall 0.7042,Train F1 0.7201
+[2026-02-26 12:34:47,038][main.py][line:179][INFO] [Run 2 | Epoch 170] Val Acc 0.7339, Val Precision 0.6372, Val Recall 0.6009, Val F1 0.6147
+[2026-02-26 12:34:47,039][main.py][line:183][INFO] [Run 2 | Epoch 170] Train Acc 0.7817, Train Precision 0.7220, Train Recall 0.6886,Train F1 0.6981
+[2026-02-26 12:40:39,811][main.py][line:179][INFO] [Run 2 | Epoch 171] Val Acc 0.7639, Val Precision 0.6716, Val Recall 0.6588, Val F1 0.6647
+[2026-02-26 12:40:39,811][main.py][line:183][INFO] [Run 2 | Epoch 171] Train Acc 0.7892, Train Precision 0.7145, Train Recall 0.7005,Train F1 0.7069
+[2026-02-26 12:46:27,852][main.py][line:179][INFO] [Run 2 | Epoch 172] Val Acc 0.7146, Val Precision 0.6278, Val Recall 0.6172, Val F1 0.6212
+[2026-02-26 12:46:27,853][main.py][line:183][INFO] [Run 2 | Epoch 172] Train Acc 0.8058, Train Precision 0.7530, Train Recall 0.7255,Train F1 0.7366
+[2026-02-26 12:52:09,608][main.py][line:179][INFO] [Run 2 | Epoch 173] Val Acc 0.7275, Val Precision 0.6529, Val Recall 0.6027, Val F1 0.6163
+[2026-02-26 12:52:09,609][main.py][line:183][INFO] [Run 2 | Epoch 173] Train Acc 0.7929, Train Precision 0.7640, Train Recall 0.6890,Train F1 0.7101
+[2026-02-26 12:57:49,839][main.py][line:179][INFO] [Run 2 | Epoch 174] Val Acc 0.7682, Val Precision 0.6977, Val Recall 0.6512, Val F1 0.6631
+[2026-02-26 12:57:49,839][main.py][line:183][INFO] [Run 2 | Epoch 174] Train Acc 0.7897, Train Precision 0.7319, Train Recall 0.7004,Train F1 0.7093
+[2026-02-26 13:03:38,262][main.py][line:179][INFO] [Run 2 | Epoch 175] Val Acc 0.7468, Val Precision 0.6463, Val Recall 0.6217, Val F1 0.6230
+[2026-02-26 13:03:38,263][main.py][line:183][INFO] [Run 2 | Epoch 175] Train Acc 0.7983, Train Precision 0.7401, Train Recall 0.7102,Train F1 0.7179
+[2026-02-26 13:09:22,982][main.py][line:179][INFO] [Run 2 | Epoch 176] Val Acc 0.7361, Val Precision 0.6562, Val Recall 0.6354, Val F1 0.6342
+[2026-02-26 13:09:22,983][main.py][line:183][INFO] [Run 2 | Epoch 176] Train Acc 0.7849, Train Precision 0.7307, Train Recall 0.7086,Train F1 0.7117
+[2026-02-26 13:15:04,442][main.py][line:179][INFO] [Run 2 | Epoch 177] Val Acc 0.7639, Val Precision 0.6853, Val Recall 0.6598, Val F1 0.6701
+[2026-02-26 13:15:04,442][main.py][line:183][INFO] [Run 2 | Epoch 177] Train Acc 0.7956, Train Precision 0.7298, Train Recall 0.7174,Train F1 0.7187
+[2026-02-26 13:20:44,089][main.py][line:179][INFO] [Run 2 | Epoch 178] Val Acc 0.7489, Val Precision 0.6573, Val Recall 0.6379, Val F1 0.6436
+[2026-02-26 13:20:44,090][main.py][line:183][INFO] [Run 2 | Epoch 178] Train Acc 0.8015, Train Precision 0.7314, Train Recall 0.7194,Train F1 0.7177
+[2026-02-26 13:26:33,650][main.py][line:179][INFO] [Run 2 | Epoch 179] Val Acc 0.7532, Val Precision 0.6507, Val Recall 0.6374, Val F1 0.6405
+[2026-02-26 13:26:33,651][main.py][line:183][INFO] [Run 2 | Epoch 179] Train Acc 0.7849, Train Precision 0.6988, Train Recall 0.7006,Train F1 0.6967
+[2026-02-26 13:32:17,785][main.py][line:179][INFO] [Run 2 | Epoch 180] Val Acc 0.7382, Val Precision 0.6551, Val Recall 0.6500, Val F1 0.6509
+[2026-02-26 13:32:17,785][main.py][line:183][INFO] [Run 2 | Epoch 180] Train Acc 0.7849, Train Precision 0.7147, Train Recall 0.7330,Train F1 0.7227
+[2026-02-26 13:37:59,245][main.py][line:179][INFO] [Run 2 | Epoch 181] Val Acc 0.7554, Val Precision 0.6565, Val Recall 0.6536, Val F1 0.6521
+[2026-02-26 13:37:59,245][main.py][line:183][INFO] [Run 2 | Epoch 181] Train Acc 0.8010, Train Precision 0.7320, Train Recall 0.7201,Train F1 0.7197
+[2026-02-26 13:43:51,098][main.py][line:179][INFO] [Run 2 | Epoch 182] Val Acc 0.7554, Val Precision 0.6748, Val Recall 0.6401, Val F1 0.6450
+[2026-02-26 13:43:51,099][main.py][line:183][INFO] [Run 2 | Epoch 182] Train Acc 0.8047, Train Precision 0.7577, Train Recall 0.7162,Train F1 0.7334
+[2026-02-26 13:49:45,248][main.py][line:179][INFO] [Run 2 | Epoch 183] Val Acc 0.7511, Val Precision 0.6614, Val Recall 0.6598, Val F1 0.6522
+[2026-02-26 13:49:45,248][main.py][line:183][INFO] [Run 2 | Epoch 183] Train Acc 0.8079, Train Precision 0.7500, Train Recall 0.7277,Train F1 0.7325
+[2026-02-26 13:55:38,186][main.py][line:179][INFO] [Run 2 | Epoch 184] Val Acc 0.7554, Val Precision 0.6797, Val Recall 0.6513, Val F1 0.6607
+[2026-02-26 13:55:38,186][main.py][line:183][INFO] [Run 2 | Epoch 184] Train Acc 0.8063, Train Precision 0.7597, Train Recall 0.7190,Train F1 0.7350
+[2026-02-26 14:01:22,372][main.py][line:179][INFO] [Run 2 | Epoch 185] Val Acc 0.7597, Val Precision 0.6772, Val Recall 0.6387, Val F1 0.6539
+[2026-02-26 14:01:22,372][main.py][line:183][INFO] [Run 2 | Epoch 185] Train Acc 0.8117, Train Precision 0.7806, Train Recall 0.7127,Train F1 0.7359
+[2026-02-26 14:07:06,893][main.py][line:179][INFO] [Run 2 | Epoch 186] Val Acc 0.7382, Val Precision 0.6402, Val Recall 0.6229, Val F1 0.6210
+[2026-02-26 14:07:06,893][main.py][line:183][INFO] [Run 2 | Epoch 186] Train Acc 0.7887, Train Precision 0.7229, Train Recall 0.7049,Train F1 0.7130
+[2026-02-26 14:12:54,649][main.py][line:179][INFO] [Run 2 | Epoch 187] Val Acc 0.7639, Val Precision 0.6759, Val Recall 0.6695, Val F1 0.6665
+[2026-02-26 14:12:54,650][main.py][line:183][INFO] [Run 2 | Epoch 187] Train Acc 0.7919, Train Precision 0.7184, Train Recall 0.7400,Train F1 0.7217
+[2026-02-26 14:18:37,549][main.py][line:179][INFO] [Run 2 | Epoch 188] Val Acc 0.7403, Val Precision 0.6591, Val Recall 0.6207, Val F1 0.6318
+[2026-02-26 14:18:37,550][main.py][line:183][INFO] [Run 2 | Epoch 188] Train Acc 0.8020, Train Precision 0.7639, Train Recall 0.7162,Train F1 0.7297
+[2026-02-26 14:24:23,981][main.py][line:179][INFO] [Run 2 | Epoch 189] Val Acc 0.7361, Val Precision 0.6463, Val Recall 0.6328, Val F1 0.6345
+[2026-02-26 14:24:23,981][main.py][line:183][INFO] [Run 2 | Epoch 189] Train Acc 0.8117, Train Precision 0.7517, Train Recall 0.7541,Train F1 0.7520
+[2026-02-26 14:30:12,756][main.py][line:179][INFO] [Run 2 | Epoch 190] Val Acc 0.7682, Val Precision 0.7159, Val Recall 0.6491, Val F1 0.6684
+[2026-02-26 14:30:12,756][main.py][line:183][INFO] [Run 2 | Epoch 190] Train Acc 0.7994, Train Precision 0.7443, Train Recall 0.7159,Train F1 0.7253
+[2026-02-26 14:36:10,016][main.py][line:179][INFO] [Run 2 | Epoch 191] Val Acc 0.7468, Val Precision 0.6491, Val Recall 0.6404, Val F1 0.6433
+[2026-02-26 14:36:10,016][main.py][line:183][INFO] [Run 2 | Epoch 191] Train Acc 0.8149, Train Precision 0.7439, Train Recall 0.7565,Train F1 0.7487
+[2026-02-26 14:41:48,918][main.py][line:179][INFO] [Run 2 | Epoch 192] Val Acc 0.7210, Val Precision 0.6259, Val Recall 0.6161, Val F1 0.6077
+[2026-02-26 14:41:48,918][main.py][line:183][INFO] [Run 2 | Epoch 192] Train Acc 0.8020, Train Precision 0.7435, Train Recall 0.7075,Train F1 0.7194
+[2026-02-26 14:47:32,876][main.py][line:179][INFO] [Run 2 | Epoch 193] Val Acc 0.7425, Val Precision 0.6570, Val Recall 0.6210, Val F1 0.6329
+[2026-02-26 14:47:32,877][main.py][line:183][INFO] [Run 2 | Epoch 193] Train Acc 0.7887, Train Precision 0.7423, Train Recall 0.6895,Train F1 0.7057
+[2026-02-26 14:53:25,781][main.py][line:179][INFO] [Run 2 | Epoch 194] Val Acc 0.7382, Val Precision 0.6341, Val Recall 0.6262, Val F1 0.6219
+[2026-02-26 14:53:25,781][main.py][line:183][INFO] [Run 2 | Epoch 194] Train Acc 0.8101, Train Precision 0.7456, Train Recall 0.7391,Train F1 0.7418
+[2026-02-26 14:59:08,384][main.py][line:179][INFO] [Run 2 | Epoch 195] Val Acc 0.7511, Val Precision 0.6771, Val Recall 0.6496, Val F1 0.6585
+[2026-02-26 14:59:08,385][main.py][line:183][INFO] [Run 2 | Epoch 195] Train Acc 0.7988, Train Precision 0.7383, Train Recall 0.7030,Train F1 0.7174
+[2026-02-26 15:05:04,447][main.py][line:179][INFO] [Run 2 | Epoch 196] Val Acc 0.7425, Val Precision 0.6502, Val Recall 0.6281, Val F1 0.6367
+[2026-02-26 15:05:04,448][main.py][line:183][INFO] [Run 2 | Epoch 196] Train Acc 0.8218, Train Precision 0.7769, Train Recall 0.7377,Train F1 0.7540
+[2026-02-26 15:10:47,602][main.py][line:179][INFO] [Run 2 | Epoch 197] Val Acc 0.7618, Val Precision 0.6730, Val Recall 0.6561, Val F1 0.6628
+[2026-02-26 15:10:47,602][main.py][line:183][INFO] [Run 2 | Epoch 197] Train Acc 0.8095, Train Precision 0.7498, Train Recall 0.7310,Train F1 0.7392
+[2026-02-26 15:16:35,772][main.py][line:179][INFO] [Run 2 | Epoch 198] Val Acc 0.7403, Val Precision 0.6524, Val Recall 0.6622, Val F1 0.6565
+[2026-02-26 15:16:35,772][main.py][line:183][INFO] [Run 2 | Epoch 198] Train Acc 0.8138, Train Precision 0.7456, Train Recall 0.7443,Train F1 0.7444
+[2026-02-26 15:22:23,751][main.py][line:179][INFO] [Run 2 | Epoch 199] Val Acc 0.7661, Val Precision 0.6896, Val Recall 0.6350, Val F1 0.6530
+[2026-02-26 15:22:23,751][main.py][line:183][INFO] [Run 2 | Epoch 199] Train Acc 0.8154, Train Precision 0.7661, Train Recall 0.7333,Train F1 0.7472
+[2026-02-26 15:28:21,954][main.py][line:179][INFO] [Run 2 | Epoch 200] Val Acc 0.7210, Val Precision 0.6314, Val Recall 0.6254, Val F1 0.6274
+[2026-02-26 15:28:21,954][main.py][line:183][INFO] [Run 2 | Epoch 200] Train Acc 0.8175, Train Precision 0.7706, Train Recall 0.7440,Train F1 0.7556
+[2026-02-26 15:33:58,345][main.py][line:179][INFO] [Run 2 | Epoch 201] Val Acc 0.7361, Val Precision 0.6366, Val Recall 0.6439, Val F1 0.6394
+[2026-02-26 15:33:58,346][main.py][line:183][INFO] [Run 2 | Epoch 201] Train Acc 0.8101, Train Precision 0.7509, Train Recall 0.7349,Train F1 0.7394
+[2026-02-26 15:39:48,650][main.py][line:179][INFO] [Run 2 | Epoch 202] Val Acc 0.7382, Val Precision 0.6322, Val Recall 0.6350, Val F1 0.6334
+[2026-02-26 15:39:48,650][main.py][line:183][INFO] [Run 2 | Epoch 202] Train Acc 0.8085, Train Precision 0.7317, Train Recall 0.7409,Train F1 0.7348
+[2026-02-26 15:45:19,072][main.py][line:179][INFO] [Run 2 | Epoch 203] Val Acc 0.7554, Val Precision 0.6523, Val Recall 0.6446, Val F1 0.6459
+[2026-02-26 15:45:19,072][main.py][line:183][INFO] [Run 2 | Epoch 203] Train Acc 0.8192, Train Precision 0.7590, Train Recall 0.7464,Train F1 0.7514
+[2026-02-26 15:51:03,532][main.py][line:179][INFO] [Run 2 | Epoch 204] Val Acc 0.7597, Val Precision 0.6639, Val Recall 0.6467, Val F1 0.6472
+[2026-02-26 15:51:03,533][main.py][line:183][INFO] [Run 2 | Epoch 204] Train Acc 0.8074, Train Precision 0.7443, Train Recall 0.7383,Train F1 0.7396
+[2026-02-26 15:56:26,266][main.py][line:179][INFO] [Run 2 | Epoch 205] Val Acc 0.7489, Val Precision 0.6608, Val Recall 0.6514, Val F1 0.6550
+[2026-02-26 15:56:26,267][main.py][line:183][INFO] [Run 2 | Epoch 205] Train Acc 0.8127, Train Precision 0.7508, Train Recall 0.7428,Train F1 0.7437
+[2026-02-26 16:01:56,642][main.py][line:179][INFO] [Run 2 | Epoch 206] Val Acc 0.7661, Val Precision 0.6818, Val Recall 0.6492, Val F1 0.6623
+[2026-02-26 16:01:56,643][main.py][line:183][INFO] [Run 2 | Epoch 206] Train Acc 0.8224, Train Precision 0.7681, Train Recall 0.7440,Train F1 0.7545
+[2026-02-26 16:07:40,891][main.py][line:179][INFO] [Run 2 | Epoch 207] Val Acc 0.7232, Val Precision 0.6225, Val Recall 0.6077, Val F1 0.6079
+[2026-02-26 16:07:40,892][main.py][line:183][INFO] [Run 2 | Epoch 207] Train Acc 0.7945, Train Precision 0.7355, Train Recall 0.7028,Train F1 0.7165
+[2026-02-26 16:13:35,313][main.py][line:179][INFO] [Run 2 | Epoch 208] Val Acc 0.7554, Val Precision 0.6857, Val Recall 0.6337, Val F1 0.6460
+[2026-02-26 16:13:35,313][main.py][line:183][INFO] [Run 2 | Epoch 208] Train Acc 0.8095, Train Precision 0.7717, Train Recall 0.7108,Train F1 0.7290
+[2026-02-26 16:19:15,406][main.py][line:179][INFO] [Run 2 | Epoch 209] Val Acc 0.7575, Val Precision 0.6781, Val Recall 0.6365, Val F1 0.6467
+[2026-02-26 16:19:15,406][main.py][line:183][INFO] [Run 2 | Epoch 209] Train Acc 0.8186, Train Precision 0.7583, Train Recall 0.7381,Train F1 0.7466
+[2026-02-26 16:25:07,311][main.py][line:179][INFO] [Run 2 | Epoch 210] Val Acc 0.7554, Val Precision 0.6723, Val Recall 0.6361, Val F1 0.6504
+[2026-02-26 16:25:07,311][main.py][line:183][INFO] [Run 2 | Epoch 210] Train Acc 0.8095, Train Precision 0.7422, Train Recall 0.7309,Train F1 0.7341
+[2026-02-26 16:31:05,851][main.py][line:179][INFO] [Run 2 | Epoch 211] Val Acc 0.7425, Val Precision 0.6640, Val Recall 0.6253, Val F1 0.6364
+[2026-02-26 16:31:05,851][main.py][line:183][INFO] [Run 2 | Epoch 211] Train Acc 0.8101, Train Precision 0.7726, Train Recall 0.7227,Train F1 0.7378
+[2026-02-26 16:36:40,377][main.py][line:179][INFO] [Run 2 | Epoch 212] Val Acc 0.7704, Val Precision 0.6904, Val Recall 0.6580, Val F1 0.6714
+[2026-02-26 16:36:40,377][main.py][line:183][INFO] [Run 2 | Epoch 212] Train Acc 0.8175, Train Precision 0.7605, Train Recall 0.7424,Train F1 0.7494
+[2026-02-26 16:42:23,539][main.py][line:179][INFO] [Run 2 | Epoch 213] Val Acc 0.7575, Val Precision 0.6670, Val Recall 0.6545, Val F1 0.6594
+[2026-02-26 16:42:23,539][main.py][line:183][INFO] [Run 2 | Epoch 213] Train Acc 0.8240, Train Precision 0.7759, Train Recall 0.7462,Train F1 0.7592
+[2026-02-26 16:48:16,472][main.py][line:179][INFO] [Run 2 | Epoch 214] Val Acc 0.7446, Val Precision 0.6520, Val Recall 0.6343, Val F1 0.6358
+[2026-02-26 16:48:16,472][main.py][line:183][INFO] [Run 2 | Epoch 214] Train Acc 0.8202, Train Precision 0.7622, Train Recall 0.7582,Train F1 0.7596
+[2026-02-26 16:54:15,178][main.py][line:179][INFO] [Run 2 | Epoch 215] Val Acc 0.7618, Val Precision 0.6677, Val Recall 0.6644, Val F1 0.6660
+[2026-02-26 16:54:15,178][main.py][line:183][INFO] [Run 2 | Epoch 215] Train Acc 0.8245, Train Precision 0.7700, Train Recall 0.7494,Train F1 0.7544
+[2026-02-26 17:00:07,957][main.py][line:179][INFO] [Run 2 | Epoch 216] Val Acc 0.7489, Val Precision 0.6416, Val Recall 0.6381, Val F1 0.6380
+[2026-02-26 17:00:07,958][main.py][line:183][INFO] [Run 2 | Epoch 216] Train Acc 0.8202, Train Precision 0.7713, Train Recall 0.7527,Train F1 0.7600
+[2026-02-26 17:05:28,904][main.py][line:179][INFO] [Run 2 | Epoch 217] Val Acc 0.7618, Val Precision 0.6789, Val Recall 0.6471, Val F1 0.6553
+[2026-02-26 17:05:28,904][main.py][line:183][INFO] [Run 2 | Epoch 217] Train Acc 0.8192, Train Precision 0.7761, Train Recall 0.7361,Train F1 0.7502
+[2026-02-26 17:11:10,657][main.py][line:179][INFO] [Run 2 | Epoch 218] Val Acc 0.7682, Val Precision 0.6814, Val Recall 0.6597, Val F1 0.6692
+[2026-02-26 17:11:10,658][main.py][line:183][INFO] [Run 2 | Epoch 218] Train Acc 0.8058, Train Precision 0.7566, Train Recall 0.7242,Train F1 0.7338
+[2026-02-26 17:16:48,819][main.py][line:179][INFO] [Run 2 | Epoch 219] Val Acc 0.7554, Val Precision 0.6769, Val Recall 0.6494, Val F1 0.6596
+[2026-02-26 17:16:48,819][main.py][line:183][INFO] [Run 2 | Epoch 219] Train Acc 0.8085, Train Precision 0.7584, Train Recall 0.7265,Train F1 0.7372
+[2026-02-26 17:22:38,576][main.py][line:179][INFO] [Run 2 | Epoch 220] Val Acc 0.7618, Val Precision 0.6717, Val Recall 0.6511, Val F1 0.6588
+[2026-02-26 17:22:38,576][main.py][line:183][INFO] [Run 2 | Epoch 220] Train Acc 0.8047, Train Precision 0.7589, Train Recall 0.7193,Train F1 0.7355
+[2026-02-26 17:28:20,355][main.py][line:179][INFO] [Run 2 | Epoch 221] Val Acc 0.7532, Val Precision 0.6576, Val Recall 0.6580, Val F1 0.6578
+[2026-02-26 17:28:20,355][main.py][line:183][INFO] [Run 2 | Epoch 221] Train Acc 0.8101, Train Precision 0.7396, Train Recall 0.7481,Train F1 0.7433
+[2026-02-26 17:33:57,049][main.py][line:179][INFO] [Run 2 | Epoch 222] Val Acc 0.7575, Val Precision 0.6689, Val Recall 0.6433, Val F1 0.6536
+[2026-02-26 17:33:57,050][main.py][line:183][INFO] [Run 2 | Epoch 222] Train Acc 0.8101, Train Precision 0.7559, Train Recall 0.7272,Train F1 0.7391
+[2026-02-26 17:39:41,369][main.py][line:179][INFO] [Run 2 | Epoch 223] Val Acc 0.7554, Val Precision 0.6531, Val Recall 0.6401, Val F1 0.6436
+[2026-02-26 17:39:41,369][main.py][line:183][INFO] [Run 2 | Epoch 223] Train Acc 0.8186, Train Precision 0.7568, Train Recall 0.7522,Train F1 0.7531
+[2026-02-26 17:45:38,371][main.py][line:179][INFO] [Run 2 | Epoch 224] Val Acc 0.7575, Val Precision 0.6858, Val Recall 0.6623, Val F1 0.6644
+[2026-02-26 17:45:38,372][main.py][line:183][INFO] [Run 2 | Epoch 224] Train Acc 0.8202, Train Precision 0.7665, Train Recall 0.7547,Train F1 0.7561
+[2026-02-26 17:51:03,281][main.py][line:179][INFO] [Run 2 | Epoch 225] Val Acc 0.7811, Val Precision 0.6870, Val Recall 0.6934, Val F1 0.6899
+[2026-02-26 17:51:03,281][main.py][line:183][INFO] [Run 2 | Epoch 225] Train Acc 0.8106, Train Precision 0.7454, Train Recall 0.7431,Train F1 0.7393
+[2026-02-26 17:55:33,095][main.py][line:179][INFO] [Run 2 | Epoch 226] Val Acc 0.7382, Val Precision 0.6445, Val Recall 0.6317, Val F1 0.6353
+[2026-02-26 17:55:33,095][main.py][line:183][INFO] [Run 2 | Epoch 226] Train Acc 0.8143, Train Precision 0.7573, Train Recall 0.7331,Train F1 0.7438
+[2026-02-26 18:00:01,021][main.py][line:179][INFO] [Run 2 | Epoch 227] Val Acc 0.7554, Val Precision 0.6633, Val Recall 0.6499, Val F1 0.6547
+[2026-02-26 18:00:01,022][main.py][line:183][INFO] [Run 2 | Epoch 227] Train Acc 0.8304, Train Precision 0.7865, Train Recall 0.7693,Train F1 0.7764
+[2026-02-26 18:05:01,076][main.py][line:179][INFO] [Run 2 | Epoch 228] Val Acc 0.7639, Val Precision 0.6710, Val Recall 0.6711, Val F1 0.6681
+[2026-02-26 18:05:01,077][main.py][line:183][INFO] [Run 2 | Epoch 228] Train Acc 0.8250, Train Precision 0.7690, Train Recall 0.7464,Train F1 0.7568
+[2026-02-26 18:09:29,289][main.py][line:179][INFO] [Run 2 | Epoch 229] Val Acc 0.7575, Val Precision 0.6678, Val Recall 0.6566, Val F1 0.6613
+[2026-02-26 18:09:29,289][main.py][line:183][INFO] [Run 2 | Epoch 229] Train Acc 0.8283, Train Precision 0.7855, Train Recall 0.7542,Train F1 0.7652
+[2026-02-26 18:13:56,908][main.py][line:179][INFO] [Run 2 | Epoch 230] Val Acc 0.7790, Val Precision 0.7097, Val Recall 0.6603, Val F1 0.6744
+[2026-02-26 18:13:56,908][main.py][line:183][INFO] [Run 2 | Epoch 230] Train Acc 0.8175, Train Precision 0.7714, Train Recall 0.7329,Train F1 0.7489
+[2026-02-26 18:18:26,091][main.py][line:179][INFO] [Run 2 | Epoch 231] Val Acc 0.7833, Val Precision 0.7057, Val Recall 0.6854, Val F1 0.6928
+[2026-02-26 18:18:26,091][main.py][line:183][INFO] [Run 2 | Epoch 231] Train Acc 0.8202, Train Precision 0.7625, Train Recall 0.7419,Train F1 0.7513
+[2026-02-26 18:22:57,767][main.py][line:179][INFO] [Run 2 | Epoch 232] Val Acc 0.7511, Val Precision 0.6625, Val Recall 0.6375, Val F1 0.6429
+[2026-02-26 18:22:57,767][main.py][line:183][INFO] [Run 2 | Epoch 232] Train Acc 0.8283, Train Precision 0.7727, Train Recall 0.7566,Train F1 0.7623
+[2026-02-26 18:27:26,358][main.py][line:179][INFO] [Run 2 | Epoch 233] Val Acc 0.7618, Val Precision 0.6697, Val Recall 0.6494, Val F1 0.6569
+[2026-02-26 18:27:26,359][main.py][line:183][INFO] [Run 2 | Epoch 233] Train Acc 0.8293, Train Precision 0.7708, Train Recall 0.7719,Train F1 0.7709
+[2026-02-26 18:31:54,767][main.py][line:179][INFO] [Run 2 | Epoch 234] Val Acc 0.7597, Val Precision 0.6611, Val Recall 0.6545, Val F1 0.6567
+[2026-02-26 18:31:54,767][main.py][line:183][INFO] [Run 2 | Epoch 234] Train Acc 0.8234, Train Precision 0.7736, Train Recall 0.7573,Train F1 0.7632
+[2026-02-26 18:36:23,420][main.py][line:179][INFO] [Run 2 | Epoch 235] Val Acc 0.7682, Val Precision 0.7023, Val Recall 0.6714, Val F1 0.6777
+[2026-02-26 18:36:23,420][main.py][line:183][INFO] [Run 2 | Epoch 235] Train Acc 0.8336, Train Precision 0.7949, Train Recall 0.7653,Train F1 0.7759
+[2026-02-26 18:40:53,561][main.py][line:179][INFO] [Run 2 | Epoch 236] Val Acc 0.7661, Val Precision 0.6850, Val Recall 0.6608, Val F1 0.6675
+[2026-02-26 18:40:53,563][main.py][line:183][INFO] [Run 2 | Epoch 236] Train Acc 0.8309, Train Precision 0.7830, Train Recall 0.7621,Train F1 0.7716
+[2026-02-26 18:45:22,766][main.py][line:179][INFO] [Run 2 | Epoch 237] Val Acc 0.7725, Val Precision 0.6837, Val Recall 0.6770, Val F1 0.6776
+[2026-02-26 18:45:22,766][main.py][line:183][INFO] [Run 2 | Epoch 237] Train Acc 0.8352, Train Precision 0.7766, Train Recall 0.7805,Train F1 0.7773
+[2026-02-26 18:49:47,271][main.py][line:179][INFO] [Run 2 | Epoch 238] Val Acc 0.7682, Val Precision 0.6905, Val Recall 0.6709, Val F1 0.6761
+[2026-02-26 18:49:47,272][main.py][line:183][INFO] [Run 2 | Epoch 238] Train Acc 0.8272, Train Precision 0.7821, Train Recall 0.7556,Train F1 0.7664
+[2026-02-26 18:53:55,277][main.py][line:179][INFO] [Run 2 | Epoch 239] Val Acc 0.7704, Val Precision 0.6864, Val Recall 0.6636, Val F1 0.6710
+[2026-02-26 18:53:55,278][main.py][line:183][INFO] [Run 2 | Epoch 239] Train Acc 0.8202, Train Precision 0.7654, Train Recall 0.7448,Train F1 0.7541
+[2026-02-26 18:58:01,948][main.py][line:179][INFO] [Run 2 | Epoch 240] Val Acc 0.7747, Val Precision 0.6929, Val Recall 0.6634, Val F1 0.6756
+[2026-02-26 18:58:01,948][main.py][line:183][INFO] [Run 2 | Epoch 240] Train Acc 0.8261, Train Precision 0.7659, Train Recall 0.7560,Train F1 0.7603
+[2026-02-26 19:02:11,126][main.py][line:179][INFO] [Run 2 | Epoch 241] Val Acc 0.7575, Val Precision 0.6681, Val Recall 0.6445, Val F1 0.6528
+[2026-02-26 19:02:11,126][main.py][line:183][INFO] [Run 2 | Epoch 241] Train Acc 0.8272, Train Precision 0.7810, Train Recall 0.7584,Train F1 0.7684
+[2026-02-26 19:06:19,727][main.py][line:179][INFO] [Run 2 | Epoch 242] Val Acc 0.7511, Val Precision 0.6590, Val Recall 0.6340, Val F1 0.6447
+[2026-02-26 19:06:19,727][main.py][line:183][INFO] [Run 2 | Epoch 242] Train Acc 0.8234, Train Precision 0.7767, Train Recall 0.7452,Train F1 0.7593
+[2026-02-26 19:10:27,793][main.py][line:179][INFO] [Run 2 | Epoch 243] Val Acc 0.7790, Val Precision 0.6870, Val Recall 0.6790, Val F1 0.6824
+[2026-02-26 19:10:27,794][main.py][line:183][INFO] [Run 2 | Epoch 243] Train Acc 0.8315, Train Precision 0.7792, Train Recall 0.7745,Train F1 0.7762
+[2026-02-26 19:14:35,016][main.py][line:179][INFO] [Run 2 | Epoch 244] Val Acc 0.7661, Val Precision 0.6727, Val Recall 0.6582, Val F1 0.6627
+[2026-02-26 19:14:35,017][main.py][line:183][INFO] [Run 2 | Epoch 244] Train Acc 0.8181, Train Precision 0.7631, Train Recall 0.7410,Train F1 0.7509
+[2026-02-26 19:18:42,881][main.py][line:179][INFO] [Run 2 | Epoch 245] Val Acc 0.7597, Val Precision 0.6684, Val Recall 0.6579, Val F1 0.6592
+[2026-02-26 19:18:42,881][main.py][line:183][INFO] [Run 2 | Epoch 245] Train Acc 0.8373, Train Precision 0.7843, Train Recall 0.7701,Train F1 0.7758
+[2026-02-26 19:22:50,389][main.py][line:179][INFO] [Run 2 | Epoch 246] Val Acc 0.7811, Val Precision 0.6956, Val Recall 0.6767, Val F1 0.6843
+[2026-02-26 19:22:50,390][main.py][line:183][INFO] [Run 2 | Epoch 246] Train Acc 0.8192, Train Precision 0.7679, Train Recall 0.7494,Train F1 0.7576
+[2026-02-26 19:26:58,310][main.py][line:179][INFO] [Run 2 | Epoch 247] Val Acc 0.7597, Val Precision 0.6669, Val Recall 0.6624, Val F1 0.6617
+[2026-02-26 19:26:58,310][main.py][line:183][INFO] [Run 2 | Epoch 247] Train Acc 0.8277, Train Precision 0.7800, Train Recall 0.7598,Train F1 0.7676
+[2026-02-26 19:31:06,892][main.py][line:179][INFO] [Run 2 | Epoch 248] Val Acc 0.7704, Val Precision 0.6907, Val Recall 0.6608, Val F1 0.6710
+[2026-02-26 19:31:06,893][main.py][line:183][INFO] [Run 2 | Epoch 248] Train Acc 0.8309, Train Precision 0.7819, Train Recall 0.7585,Train F1 0.7689
+[2026-02-26 19:35:15,489][main.py][line:179][INFO] [Run 2 | Epoch 249] Val Acc 0.7682, Val Precision 0.6894, Val Recall 0.6637, Val F1 0.6691
+[2026-02-26 19:35:15,490][main.py][line:183][INFO] [Run 2 | Epoch 249] Train Acc 0.8341, Train Precision 0.7886, Train Recall 0.7602,Train F1 0.7730
+[2026-02-26 19:39:23,562][main.py][line:179][INFO] [Run 2 | Epoch 250] Val Acc 0.7704, Val Precision 0.6883, Val Recall 0.6681, Val F1 0.6737
+[2026-02-26 19:39:23,562][main.py][line:183][INFO] [Run 2 | Epoch 250] Train Acc 0.8368, Train Precision 0.7855, Train Recall 0.7740,Train F1 0.7794
+[2026-02-26 19:43:31,007][main.py][line:179][INFO] [Run 2 | Epoch 251] Val Acc 0.7511, Val Precision 0.6594, Val Recall 0.6413, Val F1 0.6476
+[2026-02-26 19:43:31,007][main.py][line:183][INFO] [Run 2 | Epoch 251] Train Acc 0.8256, Train Precision 0.7784, Train Recall 0.7506,Train F1 0.7623
+[2026-02-26 19:47:42,948][main.py][line:179][INFO] [Run 2 | Epoch 252] Val Acc 0.7618, Val Precision 0.6793, Val Recall 0.6521, Val F1 0.6606
+[2026-02-26 19:47:42,948][main.py][line:183][INFO] [Run 2 | Epoch 252] Train Acc 0.8218, Train Precision 0.7726, Train Recall 0.7444,Train F1 0.7570
+[2026-02-26 19:51:51,908][main.py][line:179][INFO] [Run 2 | Epoch 253] Val Acc 0.7575, Val Precision 0.6692, Val Recall 0.6635, Val F1 0.6645
+[2026-02-26 19:51:51,909][main.py][line:183][INFO] [Run 2 | Epoch 253] Train Acc 0.8256, Train Precision 0.7757, Train Recall 0.7513,Train F1 0.7619
+[2026-02-26 19:55:59,780][main.py][line:179][INFO] [Run 2 | Epoch 254] Val Acc 0.7554, Val Precision 0.6705, Val Recall 0.6484, Val F1 0.6574
+[2026-02-26 19:55:59,781][main.py][line:183][INFO] [Run 2 | Epoch 254] Train Acc 0.8240, Train Precision 0.7762, Train Recall 0.7470,Train F1 0.7597
+[2026-02-26 20:00:07,059][main.py][line:179][INFO] [Run 2 | Epoch 255] Val Acc 0.7725, Val Precision 0.6893, Val Recall 0.6765, Val F1 0.6791
+[2026-02-26 20:00:07,060][main.py][line:183][INFO] [Run 2 | Epoch 255] Train Acc 0.8170, Train Precision 0.7691, Train Recall 0.7447,Train F1 0.7547
+[2026-02-26 20:04:15,399][main.py][line:179][INFO] [Run 2 | Epoch 256] Val Acc 0.7661, Val Precision 0.6776, Val Recall 0.6570, Val F1 0.6651
+[2026-02-26 20:04:15,400][main.py][line:183][INFO] [Run 2 | Epoch 256] Train Acc 0.8320, Train Precision 0.7858, Train Recall 0.7637,Train F1 0.7738
+[2026-02-26 20:08:24,869][main.py][line:179][INFO] [Run 2 | Epoch 257] Val Acc 0.7489, Val Precision 0.6581, Val Recall 0.6386, Val F1 0.6466
+[2026-02-26 20:08:24,870][main.py][line:183][INFO] [Run 2 | Epoch 257] Train Acc 0.8320, Train Precision 0.7914, Train Recall 0.7629,Train F1 0.7739
+[2026-02-26 20:12:31,466][main.py][line:179][INFO] [Run 2 | Epoch 258] Val Acc 0.7661, Val Precision 0.6857, Val Recall 0.6582, Val F1 0.6645
+[2026-02-26 20:12:31,466][main.py][line:183][INFO] [Run 2 | Epoch 258] Train Acc 0.8347, Train Precision 0.7873, Train Recall 0.7683,Train F1 0.7770
+[2026-02-26 20:16:42,519][main.py][line:179][INFO] [Run 2 | Epoch 259] Val Acc 0.7382, Val Precision 0.6430, Val Recall 0.6245, Val F1 0.6262
+[2026-02-26 20:16:42,519][main.py][line:183][INFO] [Run 2 | Epoch 259] Train Acc 0.8272, Train Precision 0.7756, Train Recall 0.7603,Train F1 0.7675
+[2026-02-26 20:20:34,292][main.py][line:179][INFO] [Run 2 | Epoch 260] Val Acc 0.7661, Val Precision 0.6900, Val Recall 0.6549, Val F1 0.6618
+[2026-02-26 20:20:34,293][main.py][line:183][INFO] [Run 2 | Epoch 260] Train Acc 0.8352, Train Precision 0.7900, Train Recall 0.7589,Train F1 0.7724
+[2026-02-26 20:24:23,298][main.py][line:179][INFO] [Run 2 | Epoch 261] Val Acc 0.7790, Val Precision 0.7031, Val Recall 0.6762, Val F1 0.6828
+[2026-02-26 20:24:23,298][main.py][line:183][INFO] [Run 2 | Epoch 261] Train Acc 0.8293, Train Precision 0.7797, Train Recall 0.7686,Train F1 0.7736
+[2026-02-26 20:28:08,610][main.py][line:179][INFO] [Run 2 | Epoch 262] Val Acc 0.7661, Val Precision 0.6773, Val Recall 0.6570, Val F1 0.6657
+[2026-02-26 20:28:08,610][main.py][line:183][INFO] [Run 2 | Epoch 262] Train Acc 0.8208, Train Precision 0.7648, Train Recall 0.7464,Train F1 0.7529
+[2026-02-26 20:31:56,313][main.py][line:179][INFO] [Run 2 | Epoch 263] Val Acc 0.7682, Val Precision 0.6872, Val Recall 0.6676, Val F1 0.6725
+[2026-02-26 20:31:56,314][main.py][line:183][INFO] [Run 2 | Epoch 263] Train Acc 0.8320, Train Precision 0.7927, Train Recall 0.7659,Train F1 0.7774
+[2026-02-26 20:35:43,703][main.py][line:179][INFO] [Run 2 | Epoch 264] Val Acc 0.7425, Val Precision 0.6633, Val Recall 0.6361, Val F1 0.6350
+[2026-02-26 20:35:43,703][main.py][line:183][INFO] [Run 2 | Epoch 264] Train Acc 0.8315, Train Precision 0.7813, Train Recall 0.7735,Train F1 0.7765
+[2026-02-26 20:39:17,777][main.py][line:179][INFO] [Run 2 | Epoch 265] Val Acc 0.7575, Val Precision 0.6745, Val Recall 0.6511, Val F1 0.6572
+[2026-02-26 20:39:17,778][main.py][line:183][INFO] [Run 2 | Epoch 265] Train Acc 0.8325, Train Precision 0.7886, Train Recall 0.7723,Train F1 0.7796
+[2026-02-26 20:42:43,971][main.py][line:179][INFO] [Run 2 | Epoch 266] Val Acc 0.7725, Val Precision 0.6933, Val Recall 0.6663, Val F1 0.6738
+[2026-02-26 20:42:43,972][main.py][line:183][INFO] [Run 2 | Epoch 266] Train Acc 0.8400, Train Precision 0.8018, Train Recall 0.7749,Train F1 0.7865
+[2026-02-26 20:46:09,252][main.py][line:179][INFO] [Run 2 | Epoch 267] Val Acc 0.7682, Val Precision 0.6869, Val Recall 0.6637, Val F1 0.6687
+[2026-02-26 20:46:09,253][main.py][line:183][INFO] [Run 2 | Epoch 267] Train Acc 0.8283, Train Precision 0.7749, Train Recall 0.7530,Train F1 0.7629
+[2026-02-26 20:49:39,728][main.py][line:179][INFO] [Run 2 | Epoch 268] Val Acc 0.7554, Val Precision 0.6699, Val Recall 0.6463, Val F1 0.6499
+[2026-02-26 20:49:39,729][main.py][line:183][INFO] [Run 2 | Epoch 268] Train Acc 0.8432, Train Precision 0.7997, Train Recall 0.7746,Train F1 0.7853
+[2026-02-26 20:53:07,470][main.py][line:179][INFO] [Run 2 | Epoch 269] Val Acc 0.7575, Val Precision 0.6700, Val Recall 0.6613, Val F1 0.6617
+[2026-02-26 20:53:07,471][main.py][line:183][INFO] [Run 2 | Epoch 269] Train Acc 0.8347, Train Precision 0.7899, Train Recall 0.7634,Train F1 0.7753
+[2026-02-26 20:56:34,563][main.py][line:179][INFO] [Run 2 | Epoch 270] Val Acc 0.7575, Val Precision 0.6605, Val Recall 0.6478, Val F1 0.6519
+[2026-02-26 20:56:34,563][main.py][line:183][INFO] [Run 2 | Epoch 270] Train Acc 0.8170, Train Precision 0.7647, Train Recall 0.7390,Train F1 0.7502
+[2026-02-26 21:00:00,218][main.py][line:179][INFO] [Run 2 | Epoch 271] Val Acc 0.7575, Val Precision 0.6741, Val Recall 0.6450, Val F1 0.6530
+[2026-02-26 21:00:00,219][main.py][line:183][INFO] [Run 2 | Epoch 271] Train Acc 0.8283, Train Precision 0.7793, Train Recall 0.7573,Train F1 0.7671
+[2026-02-26 21:03:28,029][main.py][line:179][INFO] [Run 2 | Epoch 272] Val Acc 0.7682, Val Precision 0.6941, Val Recall 0.6671, Val F1 0.6711
+[2026-02-26 21:03:28,030][main.py][line:183][INFO] [Run 2 | Epoch 272] Train Acc 0.8422, Train Precision 0.7997, Train Recall 0.7796,Train F1 0.7890
+[2026-02-26 21:06:52,747][main.py][line:179][INFO] [Run 2 | Epoch 273] Val Acc 0.7575, Val Precision 0.6654, Val Recall 0.6720, Val F1 0.6643
+[2026-02-26 21:06:52,747][main.py][line:183][INFO] [Run 2 | Epoch 273] Train Acc 0.8245, Train Precision 0.7645, Train Recall 0.7627,Train F1 0.7636
+[2026-02-26 21:10:19,352][main.py][line:179][INFO] [Run 2 | Epoch 274] Val Acc 0.7554, Val Precision 0.6671, Val Recall 0.6524, Val F1 0.6548
+[2026-02-26 21:10:19,353][main.py][line:183][INFO] [Run 2 | Epoch 274] Train Acc 0.8234, Train Precision 0.7669, Train Recall 0.7555,Train F1 0.7605
+[2026-02-26 21:13:44,680][main.py][line:179][INFO] [Run 2 | Epoch 275] Val Acc 0.7575, Val Precision 0.6842, Val Recall 0.6551, Val F1 0.6544
+[2026-02-26 21:13:44,681][main.py][line:183][INFO] [Run 2 | Epoch 275] Train Acc 0.8309, Train Precision 0.7858, Train Recall 0.7628,Train F1 0.7731
+[2026-02-26 21:17:07,544][main.py][line:179][INFO] [Run 2 | Epoch 276] Val Acc 0.7725, Val Precision 0.6978, Val Recall 0.6708, Val F1 0.6752
+[2026-02-26 21:17:07,544][main.py][line:183][INFO] [Run 2 | Epoch 276] Train Acc 0.8240, Train Precision 0.7717, Train Recall 0.7522,Train F1 0.7611
+[2026-02-26 21:20:34,365][main.py][line:179][INFO] [Run 2 | Epoch 277] Val Acc 0.7704, Val Precision 0.7012, Val Recall 0.6670, Val F1 0.6717
+[2026-02-26 21:20:34,366][main.py][line:183][INFO] [Run 2 | Epoch 277] Train Acc 0.8432, Train Precision 0.8038, Train Recall 0.7867,Train F1 0.7948
+[2026-02-26 21:23:58,298][main.py][line:179][INFO] [Run 2 | Epoch 278] Val Acc 0.7661, Val Precision 0.6883, Val Recall 0.6627, Val F1 0.6687
+[2026-02-26 21:23:58,298][main.py][line:183][INFO] [Run 2 | Epoch 278] Train Acc 0.8320, Train Precision 0.7782, Train Recall 0.7598,Train F1 0.7683
+[2026-02-26 21:27:25,123][main.py][line:179][INFO] [Run 2 | Epoch 279] Val Acc 0.7661, Val Precision 0.6788, Val Recall 0.6637, Val F1 0.6692
+[2026-02-26 21:27:25,124][main.py][line:183][INFO] [Run 2 | Epoch 279] Train Acc 0.8347, Train Precision 0.7905, Train Recall 0.7700,Train F1 0.7789
+[2026-02-26 21:30:53,204][main.py][line:179][INFO] [Run 2 | Epoch 280] Val Acc 0.7575, Val Precision 0.6710, Val Recall 0.6585, Val F1 0.6591
+[2026-02-26 21:30:53,204][main.py][line:183][INFO] [Run 2 | Epoch 280] Train Acc 0.8261, Train Precision 0.7685, Train Recall 0.7596,Train F1 0.7634
+[2026-02-26 21:34:21,718][main.py][line:179][INFO] [Run 2 | Epoch 281] Val Acc 0.7489, Val Precision 0.6563, Val Recall 0.6476, Val F1 0.6498
+[2026-02-26 21:34:21,718][main.py][line:183][INFO] [Run 2 | Epoch 281] Train Acc 0.8256, Train Precision 0.7706, Train Recall 0.7532,Train F1 0.7612
+[2026-02-26 21:37:49,237][main.py][line:179][INFO] [Run 2 | Epoch 282] Val Acc 0.7618, Val Precision 0.6777, Val Recall 0.6549, Val F1 0.6618
+[2026-02-26 21:37:49,237][main.py][line:183][INFO] [Run 2 | Epoch 282] Train Acc 0.8406, Train Precision 0.7939, Train Recall 0.7753,Train F1 0.7838
+[2026-02-26 21:41:19,105][main.py][line:179][INFO] [Run 2 | Epoch 283] Val Acc 0.7661, Val Precision 0.6875, Val Recall 0.6530, Val F1 0.6662
+[2026-02-26 21:41:19,105][main.py][line:183][INFO] [Run 2 | Epoch 283] Train Acc 0.8165, Train Precision 0.7629, Train Recall 0.7366,Train F1 0.7460
+[2026-02-26 21:44:46,555][main.py][line:179][INFO] [Run 2 | Epoch 284] Val Acc 0.7618, Val Precision 0.6810, Val Recall 0.6561, Val F1 0.6612
+[2026-02-26 21:44:46,556][main.py][line:183][INFO] [Run 2 | Epoch 284] Train Acc 0.8406, Train Precision 0.7950, Train Recall 0.7748,Train F1 0.7842
+[2026-02-26 21:48:13,240][main.py][line:179][INFO] [Run 2 | Epoch 285] Val Acc 0.7639, Val Precision 0.6815, Val Recall 0.6633, Val F1 0.6657
+[2026-02-26 21:48:13,241][main.py][line:183][INFO] [Run 2 | Epoch 285] Train Acc 0.8299, Train Precision 0.7709, Train Recall 0.7636,Train F1 0.7671
+[2026-02-26 21:51:40,779][main.py][line:179][INFO] [Run 2 | Epoch 286] Val Acc 0.7639, Val Precision 0.6918, Val Recall 0.6538, Val F1 0.6591
+[2026-02-26 21:51:40,779][main.py][line:183][INFO] [Run 2 | Epoch 286] Train Acc 0.8261, Train Precision 0.7741, Train Recall 0.7519,Train F1 0.7622
+[2026-02-26 21:55:08,793][main.py][line:179][INFO] [Run 2 | Epoch 287] Val Acc 0.7532, Val Precision 0.6771, Val Recall 0.6419, Val F1 0.6451
+[2026-02-26 21:55:08,794][main.py][line:183][INFO] [Run 2 | Epoch 287] Train Acc 0.8315, Train Precision 0.7832, Train Recall 0.7612,Train F1 0.7710
+[2026-02-26 21:58:58,413][main.py][line:179][INFO] [Run 2 | Epoch 288] Val Acc 0.7725, Val Precision 0.6937, Val Recall 0.6680, Val F1 0.6764
+[2026-02-26 21:58:58,414][main.py][line:183][INFO] [Run 2 | Epoch 288] Train Acc 0.8261, Train Precision 0.7736, Train Recall 0.7566,Train F1 0.7637
+[2026-02-26 22:02:48,896][main.py][line:179][INFO] [Run 2 | Epoch 289] Val Acc 0.7682, Val Precision 0.6900, Val Recall 0.6597, Val F1 0.6670
+[2026-02-26 22:02:48,896][main.py][line:183][INFO] [Run 2 | Epoch 289] Train Acc 0.8309, Train Precision 0.7850, Train Recall 0.7571,Train F1 0.7694
+[2026-02-26 22:06:37,737][main.py][line:179][INFO] [Run 2 | Epoch 290] Val Acc 0.7725, Val Precision 0.6954, Val Recall 0.6680, Val F1 0.6741
+[2026-02-26 22:06:37,738][main.py][line:183][INFO] [Run 2 | Epoch 290] Train Acc 0.8347, Train Precision 0.7833, Train Recall 0.7678,Train F1 0.7749
+[2026-02-26 22:10:27,230][main.py][line:179][INFO] [Run 2 | Epoch 291] Val Acc 0.7725, Val Precision 0.6984, Val Recall 0.6680, Val F1 0.6763
+[2026-02-26 22:10:27,230][main.py][line:183][INFO] [Run 2 | Epoch 291] Train Acc 0.8331, Train Precision 0.7843, Train Recall 0.7667,Train F1 0.7740
+[2026-02-26 22:14:17,629][main.py][line:179][INFO] [Run 2 | Epoch 292] Val Acc 0.7704, Val Precision 0.6951, Val Recall 0.6665, Val F1 0.6721
+[2026-02-26 22:14:17,629][main.py][line:183][INFO] [Run 2 | Epoch 292] Train Acc 0.8400, Train Precision 0.7934, Train Recall 0.7773,Train F1 0.7849
+[2026-02-26 22:18:06,137][main.py][line:179][INFO] [Run 2 | Epoch 293] Val Acc 0.7876, Val Precision 0.7128, Val Recall 0.6904, Val F1 0.6977
+[2026-02-26 22:18:06,137][main.py][line:183][INFO] [Run 2 | Epoch 293] Train Acc 0.8234, Train Precision 0.7850, Train Recall 0.7499,Train F1 0.7628
+[2026-02-26 22:21:59,084][main.py][line:179][INFO] [Run 2 | Epoch 294] Val Acc 0.7639, Val Precision 0.6849, Val Recall 0.6633, Val F1 0.6671
+[2026-02-26 22:21:59,084][main.py][line:183][INFO] [Run 2 | Epoch 294] Train Acc 0.8341, Train Precision 0.7807, Train Recall 0.7643,Train F1 0.7720
+[2026-02-26 22:25:38,021][main.py][line:179][INFO] [Run 2 | Epoch 295] Val Acc 0.7747, Val Precision 0.6984, Val Recall 0.6622, Val F1 0.6735
+[2026-02-26 22:25:38,022][main.py][line:183][INFO] [Run 2 | Epoch 295] Train Acc 0.8347, Train Precision 0.7863, Train Recall 0.7614,Train F1 0.7723
+[2026-02-26 22:29:02,126][main.py][line:179][INFO] [Run 2 | Epoch 296] Val Acc 0.7661, Val Precision 0.6867, Val Recall 0.6587, Val F1 0.6666
+[2026-02-26 22:29:02,127][main.py][line:183][INFO] [Run 2 | Epoch 296] Train Acc 0.8363, Train Precision 0.7861, Train Recall 0.7710,Train F1 0.7781
+[2026-02-26 22:32:12,964][main.py][line:179][INFO] [Run 2 | Epoch 297] Val Acc 0.7554, Val Precision 0.6667, Val Recall 0.6496, Val F1 0.6539
+[2026-02-26 22:32:12,965][main.py][line:183][INFO] [Run 2 | Epoch 297] Train Acc 0.8336, Train Precision 0.7817, Train Recall 0.7657,Train F1 0.7730
+[2026-02-26 22:35:35,109][main.py][line:179][INFO] [Run 2 | Epoch 298] Val Acc 0.7747, Val Precision 0.6923, Val Recall 0.6814, Val F1 0.6844
+[2026-02-26 22:35:35,110][main.py][line:183][INFO] [Run 2 | Epoch 298] Train Acc 0.8368, Train Precision 0.7866, Train Recall 0.7652,Train F1 0.7751
+[2026-02-26 22:39:02,683][main.py][line:179][INFO] [Run 2 | Epoch 299] Val Acc 0.7704, Val Precision 0.6987, Val Recall 0.6681, Val F1 0.6715
+[2026-02-26 22:39:02,684][main.py][line:183][INFO] [Run 2 | Epoch 299] Train Acc 0.8373, Train Precision 0.7845, Train Recall 0.7690,Train F1 0.7762
