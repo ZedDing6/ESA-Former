@@ -15,7 +15,7 @@ from torchvision import transforms
 from log import get_logger
 from spec_decoder import TIFImageFolder
 from utils import train_one_epoch, evaluate
-from esa_former import ESAFormer as create_model
+from model import ESAFormer as create_model
 from flops import count_flops_and_params
 
 import random
