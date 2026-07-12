@@ -107,10 +107,19 @@ class FSSCA(nn.Module):
         x = torch_dct.idct_2d(x, norm='ortho')
         return x.reshape(B, C, H, W)
 
-    def channel_complexity(self, x_freq: torch.Tensor) -> torch.Tensor:
+        def channel_complexity(self, x_freq: torch.Tensor) -> torch.Tensor:
+        """
+        高频能量 / 总能量
+        DCT 中左上角为低频，右下角为高频
+
+        x_freq: [B, C, H, W]
+        return: [B, C]
+        """
         B, C, H, W = x_freq.shape
-        high = x_freq[:, :, 5 * H // 8:, 5 * W // 8:].abs().sum(dim=(2, 3))
+
+        high = x_freq[:, :, 3 * H // 4:, 3 * W // 4:].abs().sum(dim=(2, 3))
         total = x_freq.abs().sum(dim=(2, 3)) + self.eps
+
         return high / total
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
