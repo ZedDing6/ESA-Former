@@ -160,8 +160,8 @@ class SpecSpaTokenizer(nn.Module):
         nn.init.trunc_normal_(self.pos_embed, std=0.02)
         nn.init.trunc_normal_(self.cls_token, std=0.02)
 
-    def forward(self, x, Spectral_x):
-        x_spectral = self.spectral_encoder(Spectral_x)
+    def forward(self, x):
+        x_spectral = self.spectral_encoder(x)
         x_spatial = cp.checkpoint(self.conv_h, x, use_reentrant=False)
         x_spatial = cp.checkpoint(self.conv_v, x_spatial, use_reentrant=False)
         x_spatial = cp.checkpoint(self.attn, x_spatial, use_reentrant=False)
@@ -282,8 +282,8 @@ class ESAFormer(nn.Module):
         self.head = nn.Linear(768, num_classes) if num_classes > 0 else nn.Identity()
         self.apply(_init_weights)
 
-    def forward_features(self, x, Spectral_x):
-        x, H, W = self.patch_embed(x, Spectral_x)
+    def forward_features(self, x):
+        x, H, W = self.patch_embed(x)
         x = self.stage1_blocks(x)
         x, H, W = self.stage1_merge(x, H, W)
         x = self.stage2_blocks(x)
@@ -292,8 +292,8 @@ class ESAFormer(nn.Module):
         x = self.norm(x)
         return x[:, 0]
 
-    def forward(self, x, Spectral_x):
-        x = self.forward_features(x, Spectral_x)
+    def forward(self, x):
+        x = self.forward_features(x)
         x = self.head(x)
         return x
 
