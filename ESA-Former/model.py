@@ -35,42 +35,33 @@ class SpectralConv1D(nn.Module):
 class CoordConditionedFrequencyResponse(nn.Module):
     def __init__(self, dct_h: int, dct_w: int, desc_dim: int = 1, hidden_dim: int = 16):
         super().__init__()
-
         coord = self.build_frequency_coord(dct_h, dct_w)
         self.register_buffer("coord", coord, persistent=False)
-
         self.pos_mlp = nn.Sequential(
             nn.Linear(1, hidden_dim),
             nn.ReLU(inplace=True)
         )
-
         self.desc_mlp = nn.Sequential(
             nn.Linear(desc_dim, hidden_dim),
             nn.ReLU(inplace=True)
         )
-
         self.head = nn.Linear(hidden_dim, 1)
 
     @staticmethod
     def build_frequency_coord(H: int, W: int) -> torch.Tensor:
         u = torch.arange(H, dtype=torch.float32).view(H, 1).expand(H, W)
         v = torch.arange(W, dtype=torch.float32).view(1, W).expand(H, W)
-
         u_norm = u / max(H - 1, 1)
         v_norm = v / max(W - 1, 1)
         r = torch.sqrt(u_norm ** 2 + v_norm ** 2)
-
         return r.unsqueeze(-1)
 
     def forward(self, desc: torch.Tensor) -> torch.Tensor:
         B, C, D = desc.shape
         assert D == 1, f"Expected desc_dim=1, but got {D}"
-
         pos_feat = self.pos_mlp(self.coord)
         desc_feat = self.desc_mlp(desc)
-
         fused = pos_feat.unsqueeze(0).unsqueeze(0) + desc_feat.unsqueeze(2).unsqueeze(3)
-
         response = self.head(fused).squeeze(-1)
         response = 0.5 + torch.sigmoid(response)
         return response
@@ -80,16 +71,14 @@ class FSSCA(nn.Module):
     def __init__(self, in_channels: int, dct_h: int = 200, dct_w: int = 200, eps: float = 1e-6):
         super().__init__()
         self.eps = eps
-
         self.channel_fc = nn.Linear(in_channels, in_channels)
-
         self.freq_response = CoordConditionedFrequencyResponse(
             dct_h=dct_h,
             dct_w=dct_w,
             desc_dim=1,
             hidden_dim=16
         )
-
+        self.sa_norm = nn.GroupNorm(in_channels, in_channels)
         self.smooth = nn.Conv2d(
             in_channels,
             in_channels,
@@ -98,7 +87,6 @@ class FSSCA(nn.Module):
             groups=in_channels,
             bias=False
         )
-
         self._init_smooth()
 
     def _init_smooth(self):
@@ -121,30 +109,24 @@ class FSSCA(nn.Module):
 
     def channel_complexity(self, x_freq: torch.Tensor) -> torch.Tensor:
         B, C, H, W = x_freq.shape
-
-        high = x_freq[:, :, 3*H // 4:, 3*W // 4:].abs().sum(dim=(2, 3))
+        high = x_freq[:, :, 5 * H // 8:, 5 * W // 8:].abs().sum(dim=(2, 3))
         total = x_freq.abs().sum(dim=(2, 3)) + self.eps
-
         return high / total
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         def _freq_block(x_inner: torch.Tensor) -> torch.Tensor:
             x_freq = self.dct_2d(x_inner)
-
             complexity = self.channel_complexity(x_freq)
             ca = torch.sigmoid(self.channel_fc(complexity))
-
             desc = complexity.unsqueeze(-1)
             response = self.freq_response(desc)
-
             x_freq_enh = x_freq * response
             x_spatial = self.idct_2d(x_freq_enh)
+            x_spatial = self.sa_norm(x_spatial)
             x_spatial = x_spatial * ca.unsqueeze(-1).unsqueeze(-1)
-
             sa = torch.sigmoid(self.smooth(x_spatial))
             x_out = x_inner + x_inner * sa
             return x_out
-
         return cp.checkpoint(_freq_block, x, use_reentrant=False)
 
 
@@ -158,7 +140,6 @@ class SpecSpaTokenizer(nn.Module):
             in_bands=in_c,
             out_channels=embed_dim
         )
-
         self.conv_h = nn.Sequential(
             nn.Conv2d(in_c, embed_dim, kernel_size=(self.kernel_h, 1), stride=(self.stride_h, 1),
                       padding=(self.padding_h, 0)),
@@ -171,7 +152,6 @@ class SpecSpaTokenizer(nn.Module):
             nn.BatchNorm2d(embed_dim),
             nn.GELU()
         )
-
         self.token_h = (img_size + self.padding_h * self.padding_h - self.kernel_h) // self.stride_h + 1
         self.token_w = (img_size + self.padding_w * self.padding_w - self.kernel_w) // self.stride_w + 1
         self.pos_embed = nn.Parameter(torch.zeros(1, self.token_h * self.token_w, embed_dim))
@@ -182,13 +162,11 @@ class SpecSpaTokenizer(nn.Module):
 
     def forward(self, x, Spectral_x):
         x_spectral = self.spectral_encoder(Spectral_x)
-
         x_spatial = cp.checkpoint(self.conv_h, x, use_reentrant=False)
         x_spatial = cp.checkpoint(self.conv_v, x_spatial, use_reentrant=False)
         x_spatial = cp.checkpoint(self.attn, x_spatial, use_reentrant=False)
         x_spatial = x_spatial + x_spectral
         B, C2, H2, W2 = x_spatial.shape
-
         x_spatial_flat = x_spatial.permute(0, 2, 3, 1).reshape(B, H2 * W2, C2)
         x_proj = x_spatial_flat + self.pos_embed
         cls_token = self.cls_token.expand(B, -1, -1)
@@ -201,22 +179,17 @@ class TokenMerge(nn.Module):
         super().__init__()
         self.kernel_size = kernel_size
         self.stride = stride
-
-        self.scale = nn.Parameter(torch.zeros(1, in_dim, 1, 1))
-        self.cls_alpha = nn.Parameter(torch.zeros(1))
-
+        self.scale = nn.Parameter(torch.zeros(1))
         self.padding = padding
         self.merge = nn.Sequential(
             nn.Conv2d(in_dim, out_dim, kernel_size=kernel_size, stride=stride, padding=padding),
             nn.GroupNorm(1, out_dim),
             nn.GELU(),
         )
-
         self.cls_proj = nn.Linear(in_dim, out_dim) if in_dim != out_dim else nn.Identity()
 
     def sim_calib(self, x):
         B, C, H, W = x.shape
-
         pad_h = 0
         pad_w = 0
         if H % 2 != 0:
@@ -224,73 +197,55 @@ class TokenMerge(nn.Module):
             H_pad = H + 1
         else:
             H_pad = H
-
         if W % 2 != 0:
             pad_w = 1
             W_pad = W + 1
         else:
             W_pad = W
-
         if pad_h > 0 or pad_w > 0:
             x = F.pad(x, (0, pad_w, 0, pad_h), mode='reflect')
-
         mask = torch.ones((B, 1, H_pad, W_pad), device=x.device)
         if pad_h > 0:
             mask[:, :, H:, :] = 0
         if pad_w > 0:
             mask[:, :, :, W:] = 0
-
         x = x * mask
-
         x_group = x.reshape(B, C, H_pad // 2, 2, W_pad // 2, 2)
         x_group = x_group.permute(0, 2, 4, 3, 5, 1)
         x_group = x_group.reshape(B, -1, 4, C)
-
         x_norm = F.normalize(x_group, dim=-1)
         sim = torch.matmul(x_norm, x_norm.transpose(-1, -2))
         attn = torch.softmax(sim, dim=-1)
-
         x_sim = torch.matmul(attn, x_group)
-
         x_sim = x_sim.reshape(B, H_pad // 2, W_pad // 2, 2, 2, C)
         x_sim = x_sim.permute(0, 5, 1, 3, 2, 4)
         x_sim = x_sim.reshape(B, C, H_pad, W_pad)
-
         if pad_h > 0 or pad_w > 0:
             x_sim = x_sim[:, :, :H, :W]
-
         return self.scale * x_sim
 
     def forward(self, x, H, W):
         B, N, C = x.shape
         cls_token, tokens = x[:, 0:1, :], x[:, 1:, :]
-
         x_feat = tokens.transpose(1, 2).reshape(B, C, H, W)
         x_feat = x_feat + self.sim_calib(x_feat)
-
         x_merged = cp.checkpoint(self.merge, x_feat, use_reentrant=False)
-
         H_new, W_new = x_merged.shape[2:]
         x_merged_flat = x_merged.flatten(2).transpose(1, 2)
-
         cls_token = self.cls_proj(cls_token)
-
         x_out = torch.cat([cls_token, x_merged_flat], dim=1)
-
         return x_out, H_new, W_new
 
 
 class ESAFormer(nn.Module):
-    def __init__(self, img_size=200, in_c=5, num_classes=1000,
-                 embed_dim=768, mlp_ratio=4.0, drop_ratio=0.,
-                 attn_drop_ratio=0., drop_path_ratio=0., norm_layer=None,
-                 act_layer=None):
-
+    def __init__(self, img_size=200, in_c=5, num_classes=1000, mlp_ratio=4.0,
+                 drop_ratio=0., attn_drop_ratio=0., drop_path_ratio=0.):
         super(ESAFormer, self).__init__()
         self.num_classes = num_classes
-        self.num_features = self.embed_dim = embed_dim
-        norm_layer = norm_layer or partial(nn.LayerNorm, eps=1e-6)
-        act_layer = act_layer or nn.GELU
+        self.num_features = 768
+
+        norm_layer = partial(nn.LayerNorm, eps=1e-6)
+        act_layer = nn.GELU
 
         self.patch_embed = SpecSpaTokenizer(
             img_size=img_size, in_c=in_c, embed_dim=192
@@ -324,24 +279,18 @@ class ESAFormer(nn.Module):
         ])
 
         self.norm = norm_layer(768)
-        self.pre_logits = nn.Identity()
         self.head = nn.Linear(768, num_classes) if num_classes > 0 else nn.Identity()
-
         self.apply(_init_weights)
 
     def forward_features(self, x, Spectral_x):
         x, H, W = self.patch_embed(x, Spectral_x)
-
         x = self.stage1_blocks(x)
         x, H, W = self.stage1_merge(x, H, W)
-
         x = self.stage2_blocks(x)
         x, H, W = self.stage2_merge(x, H, W)
-
         x = self.stage3_blocks(x)
         x = self.norm(x)
-
-        return self.pre_logits(x[:, 0])
+        return x[:, 0]
 
     def forward(self, x, Spectral_x):
         x = self.forward_features(x, Spectral_x)
@@ -368,7 +317,6 @@ def esaformer(num_classes: int = 1000):
         img_size=200,
         in_c=5,
         num_classes=num_classes,
-        embed_dim=768,
         mlp_ratio=4.0
     )
     return model
@@ -384,13 +332,8 @@ class DropPath(nn.Module):
 
 
 class Attention(nn.Module):
-    def __init__(self,
-                 dim,
-                 num_heads=8,
-                 qkv_bias=False,
-                 qk_scale=None,
-                 attn_drop_ratio=0.,
-                 proj_drop_ratio=0.):
+    def __init__(self, dim, num_heads=8, qkv_bias=False, qk_scale=None,
+                 attn_drop_ratio=0., proj_drop_ratio=0.):
         super(Attention, self).__init__()
         self.num_heads = num_heads
         head_dim = dim // num_heads
@@ -404,11 +347,9 @@ class Attention(nn.Module):
         B, N, C = x.shape
         qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
         q, k, v = qkv[0], qkv[1], qkv[2]
-
         attn = (q @ k.transpose(-2, -1)) * self.scale
         attn = attn.softmax(dim=-1)
         attn = self.attn_drop(attn)
-
         x = (attn @ v).transpose(1, 2).reshape(B, N, C)
         x = self.proj(x)
         x = self.proj_drop(x)
@@ -435,17 +376,9 @@ class Mlp(nn.Module):
 
 
 class Block(nn.Module):
-    def __init__(self,
-                 dim,
-                 num_heads,
-                 mlp_ratio=4.,
-                 qkv_bias=False,
-                 qk_scale=None,
-                 drop_ratio=0.,
-                 attn_drop_ratio=0.,
-                 drop_path_ratio=0.,
-                 act_layer=nn.GELU,
-                 norm_layer=nn.LayerNorm):
+    def __init__(self, dim, num_heads, mlp_ratio=4., qkv_bias=False, qk_scale=None,
+                 drop_ratio=0., attn_drop_ratio=0., drop_path_ratio=0.,
+                 act_layer=nn.GELU, norm_layer=nn.LayerNorm):
         super(Block, self).__init__()
         self.norm1 = norm_layer(dim)
         self.attn = Attention(dim, num_heads=num_heads, qkv_bias=qkv_bias, qk_scale=qk_scale,
